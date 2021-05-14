@@ -75,7 +75,12 @@ h1 {
 /*PREMIERE SECTION DE PRESENTATION*/
 /*# sourceMappingURL=style.css.map */
 
-h2, h3
+h2
+{
+    font-family:'robotobold' ;
+    font-size: 1.4em;
+}
+h3
 {
     font-family:'robotobold' ;
 }
@@ -95,6 +100,14 @@ h2, h3
     box-shadow: -1px 2px 8px #00000085;
     border:none;
     margin:10px 0px 55px 0px;
+}
+.bouton:active
+{
+    color:$primary;
+}
+.fontionnement
+{
+    padding:25px 9px 50px 9px;
 }
 .comment_reserver
 {
@@ -140,6 +153,11 @@ h2, h3
 }
 
 /*RESTAURANTS*/
+.restaurants
+{
+    background-color: #F6F6F6;
+    padding: 15px 9px 50px 9px;
+}
 
 .card
  {
@@ -149,6 +167,7 @@ h2, h3
     width: 95%;
     margin:auto;
     margin-bottom:15px;
+    background-color: white;
  }
  figure
  {
@@ -164,10 +183,10 @@ h2, h3
     right: 8px;
     background-color: #99E2D0;
     color: #008766;
-    padding: 7px;
+    padding: 5px 13px;
     font-size: 15px;
     font-family: 'robotobold';
-    border-radius: 5px;  
+    border-radius: 4px;  
  }
  .image_restaurant
  {
@@ -186,7 +205,11 @@ h2, h3
      color:black;
      width: 90%;
     margin: auto;
-    line-height: 10px;
+    line-height: 2px;
+ }
+ a:link
+ {
+     text-decoration: none;
  }
  .icon_wishlist
  {
@@ -196,19 +219,22 @@ h2, h3
  {
      background-color: #353535;
      color:white;
+     padding:15px;
  }
- .footer {
-     h1 {
-        color:white;
-        text-align: left;
-        font-size: 1em;
-     }
- 
+ h4
+ {
+     font-family: "shrikhandregular";
  }
+    
  ul
  {
-     list-style-type: none;
-     line-height: 26px;
-    font-size: 14px;
+    list-style-type: none;
+    line-height: 26px;
+    font-size: 16px;
+    padding-left: 0px;
+ }
+ .icone_footer
+ {
+     margin-right:5px;
  }
 /*# sourceMappingURL=style.scss.map */
