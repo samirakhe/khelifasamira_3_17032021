@@ -91,7 +91,7 @@ h3
 }
 .bouton
 {
-    background-color: $primary;
+    background:linear-gradient(-5deg,$primary, $secondary);
     color:white;
     font-size: 0.9em;
     padding:15px;
