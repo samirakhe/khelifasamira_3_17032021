@@ -1,10 +1,9 @@
-
-
-/*DEUXIEME SECTION MENU DU RESTAURANT*/
-
 .h3_menu
 {
     font-family: $general_font;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #99E2D0;
+    width: 14%;
 }
 .menu_du_restaurant
 {
@@ -54,6 +53,7 @@ h4, .prix
     flex-direction: column;
     justify-content: space-between;
     height:300px;
+    margin-top: -70px;
 }
 .les_choix
 
@@ -79,11 +79,5 @@ h4, .prix
     justify-content: space-between;
     align-items: center;
 }
-
-.bouton.btnmenu
-{
-    padding:11px 41px;
-}
-
 
 
