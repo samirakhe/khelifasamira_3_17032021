@@ -1,0 +1,24 @@
+.bouton
+{
+    background:linear-gradient(-5deg,$primary, $secondary);
+    color:white;
+    font-size: 0.9em;
+    display: block;
+    padding:15px;
+    height:50px;
+    border-radius: 25px;
+    box-shadow: -1px 2px 8px #00000085;
+    border:none;
+    margin:10px auto 55px auto;
+    transform:scale(1);
+    transition: transform 400ms;
+
+    &:hover{
+        transform: scale(1.15);
+    
+    }
+
+    &:active{
+        color:$primary;
+    }
+}

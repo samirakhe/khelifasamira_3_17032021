@@ -1,37 +1,11 @@
-@font-face {
-    font-family: "shrikhandregular";
-    src: url("shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Roboto";
-    src: url("Roboto-Regular.eot");
-    src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'robotobold';
-    src: url('roboto-bold-webfont.woff2') format('woff2'),
-         url('roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import "abstracts/variables";
+@import "components/bouton";
+@import "layout/footer";
+@import "base/typography";
+@import "pages/style_menu";
 
-}
-@font-face {
-    font-family: 'robotothin';
-    src: url('roboto-thin-webfont.woff2') format('woff2'),
-         url('roboto-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
-$primary:#9356DC;
-$secondary:#FF79DA;
-$tertiary:#99E2D0;
 
 
 /*BODY + HEADER*/
@@ -51,7 +25,7 @@ header {
 }
 
 h1 {
-	font-family: "shrikhandregular";
+	font-family: $primary_font;
 	text-align: center;
 }
 
@@ -77,10 +51,9 @@ h1 {
 
 h2
 {
-    font-family:'robotobold' ;
     font-size: 1.4em;
 }
-h3
+h3,h2
 {
     font-family:'robotobold' ;
 }
@@ -90,28 +63,6 @@ h3
     padding:15px;
 }
 
-
-.bouton
-{
-    background:linear-gradient(-5deg,$primary, $secondary);
-    color:white;
-    font-size: 0.9em;
-    padding:15px;
-    height:50px;
-    border-radius: 25px;
-    box-shadow: -1px 2px 8px #00000085;
-    border:none;
-    margin:10px 0px 55px 0px;
-    transform:scale(1);
-    transition: transform 400ms;
-    &:hover{
-        transform: scale(1.15);
-    }
-}
-.bouton:active
-{
-    color:$primary;
-}
 .fontionnement
 {
     padding:25px 9px 50px 9px;
@@ -222,26 +173,5 @@ h3
  {
      font-size: 2em;
  }
- footer
- {
-     background-color: #353535;
-     color:white;
-     padding:15px;
- }
- h4
- {
-     font-family: "shrikhandregular";
- }
-    
- ul
- {
-    list-style-type: none;
-    line-height: 26px;
-    font-size: 16px;
-    padding-left: 0px;
- }
- .icone_footer
- {
-     margin-right:5px;
- }
+ 
 /*# sourceMappingURL=style.scss.map */

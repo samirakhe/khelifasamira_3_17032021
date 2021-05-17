@@ -1,3 +1,42 @@
+.bouton {
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
+  color: white;
+  font-size: 0.9em;
+  display: block;
+  padding: 15px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: -1px 2px 8px #00000085;
+  border: none;
+  margin: 10px auto 55px auto;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.bouton:hover {
+  transform: scale(1.15);
+}
+.bouton:active {
+  color: #9356DC;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 15px;
+}
+footer h4 {
+  font-family: "shrikhandregular";
+}
+footer ul {
+  list-style-type: none;
+  line-height: 26px;
+  font-size: 16px;
+  padding-left: 0px;
+}
+footer .icone_footer {
+  margin-right: 5px;
+}
+
 @font-face {
   font-family: "shrikhandregular";
   src: url("shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
@@ -24,6 +63,112 @@
   font-weight: normal;
   font-style: normal;
 }
+body.page_menu {
+  font-size: 1em;
+}
+body.page_menu .bloc_page header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.page_menu .bloc_page header .fleche_precedent {
+  position: absolute;
+  top: 30px;
+  left: 38px;
+  font-size: 25px;
+}
+body.page_menu .bloc_page .image_restaurant {
+  width: 100%;
+  height: 255px;
+  position: relative;
+}
+
+/*HEADER*/
+/* PREMIERE SECTION AVEC IMAGE PRINCIPALE DU RESTAURANT*/
+/*DEUXIEME SECTION MENU DU RESTAURANT*/
+.menu_du_restaurant {
+  padding: 10px;
+  background-color: #F6F6F6;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
+  position: relative;
+  top: -31px;
+}
+.menu_du_restaurant .entree_plat_dessert {
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu_du_restaurant h2 {
+  font-family: "shrikhandregular";
+}
+
+.nom_et_coeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon_wishlist {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+h4, .prix {
+  font-family: "robotobold";
+}
+
+.categorie_de_plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.les_choix {
+  display: flex;
+  flex-direction: column;
+  line-height: 0px;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.detail_et_prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bouton.btnmenu {
+  color: black;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 15px;
+}
+
+h5 {
+  font-family: "shrikhandregular";
+}
+
+ul {
+  list-style-type: none;
+  line-height: 26px;
+  font-size: 16px;
+  padding-left: 0px;
+}
+
+.icone_footer {
+  margin-right: 5px;
+}
+
 /*BODY + HEADER*/
 body {
   font-family: "robotothin";
@@ -70,11 +215,10 @@ h1 {
 /*PREMIERE SECTION DE PRESENTATION*/
 /*# sourceMappingURL=style.css.map */
 h2 {
-  font-family: "robotobold";
   font-size: 1.4em;
 }
 
-h3 {
+h3, h2 {
   font-family: "robotobold";
 }
 
@@ -82,27 +226,6 @@ h3 {
   text-align: center;
   background-color: #f7f7f7;
   padding: 15px;
-}
-
-.bouton {
-  background: linear-gradient(-5deg, #9356DC, #FF79DA);
-  color: white;
-  font-size: 0.9em;
-  padding: 15px;
-  height: 50px;
-  border-radius: 25px;
-  box-shadow: -1px 2px 8px #00000085;
-  border: none;
-  margin: 10px 0px 55px 0px;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.bouton:hover {
-  transform: scale(1.15);
-}
-
-.bouton:active {
-  color: #9356DC;
 }
 
 .fontionnement {
@@ -212,27 +335,6 @@ a:link {
   font-size: 2em;
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 15px;
-}
-
-h4 {
-  font-family: "shrikhandregular";
-}
-
-ul {
-  list-style-type: none;
-  line-height: 26px;
-  font-size: 16px;
-  padding-left: 0px;
-}
-
-.icone_footer {
-  margin-right: 5px;
-}
-
 /*# sourceMappingURL=style.scss.map */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

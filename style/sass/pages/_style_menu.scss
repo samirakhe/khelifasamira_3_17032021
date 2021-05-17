@@ -1,0 +1,141 @@
+
+
+body.page_menu
+{
+   font-size: 1em;
+
+   .bloc_page
+   {
+        header
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .fleche_precedent
+                {
+                    position: absolute;
+                    top:30px;
+                    left:38px;
+                    font-size: 25px;
+                }
+        }
+
+        .image_restaurant
+        {
+            width: 100%;
+            height: 255px;
+            position: relative;
+        }
+   }
+
+   
+}
+
+
+/*HEADER*/
+
+
+/* PREMIERE SECTION AVEC IMAGE PRINCIPALE DU RESTAURANT*/
+
+
+
+/*DEUXIEME SECTION MENU DU RESTAURANT*/
+
+.menu_du_restaurant
+{
+    padding:10px;
+    background-color:#F6F6F6;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    position:relative;
+    top:-31px;
+
+    .entree_plat_dessert
+        {
+            height:1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+    h2
+        {
+            font-family: $primary_font;
+        }
+
+}
+
+.nom_et_coeur
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon_wishlist
+{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+
+h4, .prix
+{
+    font-family: 'robotobold';
+}
+
+.categorie_de_plat
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:300px;
+}
+.les_choix
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    background-color:white;
+    width: 95%;
+    margin:auto;
+    padding:10px;
+    border-radius: 15px;
+}
+.detail_et_prix
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bouton.btnmenu
+{
+    color:black;
+}
+
+
+/*FOOTER*/
+
+footer
+ {
+     background-color: #353535;
+     color:white;
+     padding:15px;
+ }
+ h5
+ {
+     font-family: "shrikhandregular";
+ }
+    
+ ul
+ {
+    list-style-type: none;
+    line-height: 26px;
+    font-size: 16px;
+    padding-left: 0px;
+ }
+ .icone_footer
+ {
+     margin-right:5px;
+ }
