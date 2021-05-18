@@ -95,6 +95,11 @@ h3, h2 {
   font-size: 0.9em;
   border-radius: 20px;
   box-shadow: -1px 2px 10px #0000002e;
+  transition: all 0.5s ease;
+}
+.etapes:hover {
+  color: #9356DC;
+  box-shadow: 2px 15px 10px #0000002e;
 }
 
 .nombre {
@@ -195,6 +200,9 @@ footer ul {
   line-height: 26px;
   font-size: 16px;
   padding-left: 0px;
+}
+footer ul a:link {
+  color: white;
 }
 footer .icone_footer {
   margin-right: 5px;
