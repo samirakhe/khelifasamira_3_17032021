@@ -56,6 +56,19 @@ h4, .prix
     justify-content: space-between;
     height:500px;
     margin-top: -70px;
+    animation:slidedown 1s ;
+}
+
+@keyframes slidedown{
+    from {
+            transform:translateX(100px);
+            opacity: 0;
+    }
+    to 
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .les_choix
 
