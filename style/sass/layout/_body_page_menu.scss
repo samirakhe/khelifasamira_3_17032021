@@ -1,3 +1,16 @@
+.nom_et_coeur
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon_wishlist
+{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+
 .h3_menu
 {
     font-family: $general_font;
@@ -29,17 +42,6 @@
 
 }
 
-.nom_et_coeur
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.icon_wishlist
-{
-    font-size: 25px;
-    margin-right: 15px;
-}
 
 
 h4, .prix
@@ -52,7 +54,7 @@ h4, .prix
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:300px;
+    height:500px;
     margin-top: -70px;
 }
 .les_choix
@@ -62,6 +64,7 @@ h4, .prix
     background-color: white;
     line-height: 0px;
     height: 60px;
+    margin-bottom:10px;
 }
 /*{
     display: flex;

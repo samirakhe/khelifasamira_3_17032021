@@ -10,13 +10,20 @@ body.page_menu
             justify-content: center;
             align-items: center;
 
+            .bloc_logo
+            {
+                box-shadow: none;
+                position: relative;
+            }
             .fleche_precedent
                 {
                     position: absolute;
                     top:30px;
                     left:38px;
                     font-size: 25px;
+                    color:black;
                 }
+                
         }
 
         .image_restaurant
@@ -24,6 +31,7 @@ body.page_menu
             width: 100%;
             height: 255px;
             position: relative;
+            border-radius: 0px;
         }
    }
 
