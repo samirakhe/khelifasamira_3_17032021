@@ -7,6 +7,7 @@
     border-radius: 0px;
     object-fit: cover;
 }
+
 .nom_et_coeur
 {
     display: flex;
@@ -14,31 +15,30 @@
     align-items: center;
 }
 
-.icon_wishlist_dessus
+.icon_wishlist
 {
-    position:relative;
     font-size: 25px;
     margin-right: 15px;
-    background-image:$degrade;
-    -webkit-background-clip: text;
-    color:transparent;
-    opacity: 0;
-        &:hover{
-            opacity: 1;
-            transition: opacity 450ms;
-        }
-    
 
+        .icon_wishlist_dessus
+            {
+                position: relative;
+                background-image:$degrade;
+                -webkit-background-clip: text;
+                color:transparent;
+                opacity: 0;
+                    &:hover {
+                    opacity: 1;
+                    transition: opacity 450ms;
+                    }
+            }
+        .icon_wishlist_fond
+            {
+                position:relative;
+                left: 31px;
+                color:black;
+            }
 }
-
-.icon_wishlist_fond
-{
-  
-    position: relative;
-    left: 31px;
-    color:black;
-}
-
 
 .h3_menu
 {
@@ -84,9 +84,6 @@ h4, .prix
    
 }
 
-
-    
-
 .les_choix
 
 {
@@ -96,6 +93,7 @@ h4, .prix
     height: 60px;
     margin-bottom:10px;
 }
+
 /*{
     display: flex;
     flex-direction: column;
@@ -106,11 +104,9 @@ h4, .prix
     padding:10px;
     border-radius: 15px;
 }*/
-.detail_et_prix
-{
+
+.detail_et_prix {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-

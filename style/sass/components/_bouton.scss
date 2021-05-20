@@ -1,6 +1,8 @@
 .bouton
 {
+    cursor: pointer;
     background:$degrade;
+    background-color: $degrade;
     color:white;
     font-size: 0.9em;
     display: block;
@@ -11,11 +13,10 @@
     border:none;
     margin:10px auto 55px auto;
     transform:scale(1);
-    transition: transform 400ms;
+    transition: all 400ms;
 
-    &:hover{
-        transform: scale(1.15);
-    
+        &:hover{
+            transform: scale(1.05);        
     }
 
     &:active{
