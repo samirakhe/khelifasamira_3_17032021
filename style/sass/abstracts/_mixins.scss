@@ -9,3 +9,11 @@
         margin: auto;
         margin-bottom: 10px;
 }
+
+@mixin categorie_entreeplatdessert {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:500px;
+
+}

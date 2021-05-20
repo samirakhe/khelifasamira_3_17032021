@@ -1,3 +1,26 @@
+.barre_recherche
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EAEAEA;
+    }
+
+    .iconelocalisation 
+    {
+        margin-right: 3px;
+    }
+
+    .recherche 
+    {
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        width: 43%;
+        background-color: #EAEAEA;
+        height: 50px;
+    }
+
 h2
 {
     font-size: 1.4em;

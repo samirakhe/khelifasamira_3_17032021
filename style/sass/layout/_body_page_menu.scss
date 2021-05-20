@@ -1,13 +1,42 @@
+
+.image_restaurant_menu
+{
+    width: 100%;
+    height: 255px;
+    position: relative;
+    border-radius: 0px;
+    object-fit: cover;
+}
 .nom_et_coeur
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.icon_wishlist
+
+.icon_wishlist_dessus
 {
+    position:relative;
     font-size: 25px;
     margin-right: 15px;
+    background-image:$degrade;
+    -webkit-background-clip: text;
+    color:transparent;
+    opacity: 0;
+        &:hover{
+            opacity: 1;
+            transition: opacity 450ms;
+        }
+    
+
+}
+
+.icon_wishlist_fond
+{
+  
+    position: relative;
+    left: 31px;
+    color:black;
 }
 
 
@@ -49,27 +78,15 @@ h4, .prix
     font-family: $bold_font;
 }
 
-.categorie_de_plat
+.categorie_entree, .categorie_plat, .categorie_dessert
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height:500px;
-    margin-top: -70px;
-    animation:slidedown 1s ;
+   @include categorie_entreeplatdessert;
+   
 }
 
-@keyframes slidedown{
-    from {
-            transform:translateX(100px);
-            opacity: 0;
-    }
-    to 
-    {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
+    
+
 .les_choix
 
 {
