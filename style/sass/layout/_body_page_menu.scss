@@ -114,7 +114,7 @@ h4, .prix
     align-items: center;
 }
 
-.choixone, .choixtwo, .choixthree
+.choixone, .choixtwo, .choixthree, .choixfour
 {
     animation-name:choixone; /* Voir fichier keyframes*/
     animation-duration:1s;
@@ -137,4 +137,9 @@ h4, .prix
 .choixthree
 {
     animation-delay: 0.8s;
+}
+
+.choixfour
+{
+    animation-delay: 1s;
 }
