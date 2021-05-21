@@ -1,3 +1,13 @@
+@charset "UTF-8";
+/* keyframe appliqué au choix du menu"*/
+@keyframes choixone {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale 1;
+  }
+}
 .bouton {
   cursor: pointer;
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
@@ -29,6 +39,8 @@ body {
   font-family: "robotothin";
   font-weight: bold;
   font-size: 1.1em;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .bloc_logo {
@@ -257,6 +269,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   position: relative;
   background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   opacity: 0;
 }
@@ -336,6 +349,25 @@ h4, .prix {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.choixone, .choixtwo, .choixthree {
+  animation-name: choixone;
+  /* Voir fichier keyframes*/
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+.choixone {
+  animation-delay: 0.4s;
+}
+
+.choixtwo {
+  animation-delay: 0.6s;
+}
+
+.choixthree {
+  animation-delay: 0.8s;
 }
 
 @font-face {
