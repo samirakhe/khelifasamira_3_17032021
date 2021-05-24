@@ -24,13 +24,14 @@
             {
                 position: relative;
                 background-image:$degrade;
-                -webkit-background-clip: text;
                 background-clip: text;
+                -webkit-background-clip: text;
+                
                 color:transparent;
                 opacity: 0;
                     &:hover {
                     opacity: 1;
-                    transition: opacity 450ms;
+                    transition: opacity 650ms ease-in-out;
                     }
             }
         .icon_wishlist_fond
@@ -72,8 +73,6 @@
 
 }
 
-
-
 h4, .prix
 {
     font-family: $bold_font;
@@ -95,26 +94,13 @@ h4, .prix
     margin-bottom:10px;
 }
 
-
-
-/*{
-    display: flex;
-    flex-direction: column;
-    line-height: 0px;
-    background-color:white;
-    width: 95%;
-    margin:auto;
-    padding:10px;
-    border-radius: 15px;
-}*/
-
 .detail_et_prix {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/*.choixone, .choixtwo, .choixthree, .choixfour*/
+
 
 .les_choix
 {
@@ -123,28 +109,6 @@ h4, .prix
     animation-fill-mode: backwards;
 }
 
-/*.choixone
-{
-    animation-delay: 0.4s;
-
-}
-
-.choixtwo
-{
-    animation-delay: 0.6s;
-    
-
-}
-
-.choixthree
-{
-    animation-delay: 0.8s;
-}
-
-.choixfour
-{
-    animation-delay: 1s;
-}*/
 
 .categorie_de_plat :nth-child(1)
 {
