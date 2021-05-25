@@ -20,13 +20,48 @@
     font-size: 25px;
     margin-right: 15px;
 
+        .icon_wishlist_fond
+            { 
+        position: relative;
+        left:31px;
+        color:black;
+            }
+                
+        .icon_wishlist_dessus
+                    {
+                position: relative;
+                animation-name:moove;
+                animation-duration: 2s;
+                background-image:$degrade;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color:transparent;
+                    }
+            
+
+}
+
+@keyframes moove 
+{
+    0% {transform: scale(0)}
+    20% {transform: scale (0.2)}
+    50% {transform: scale(0.5)}
+    80% {transform: scale(0.8)}
+    100% {transform: scale(1)}
+  
+}
+        /*.icon_wishlist_fond
+        {
+            position:relative;
+            left: 31px;
+            color:black;
+        }
         .icon_wishlist_dessus
             {
                 position: relative;
                 background-image:$degrade;
                 background-clip: text;
                 -webkit-background-clip: text;
-                
                 color:transparent;
                 opacity: 0;
                     &:hover {
@@ -34,13 +69,8 @@
                     transition: opacity 650ms ease-in-out;
                     }
             }
-        .icon_wishlist_fond
-            {
-                position:relative;
-                left: 31px;
-                color:black;
-            }
-}
+       
+}*/
 
 .h3_menu
 {
@@ -76,6 +106,10 @@
 h4, .prix
 {
     font-family: $bold_font;
+}
+h4
+{
+    margin-bottom: 10px;
 }
 
 .categorie_de_plat

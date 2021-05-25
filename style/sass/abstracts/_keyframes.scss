@@ -1,8 +1,30 @@
 
-/* keyframe appliqué au choix du menu*/
+/* keyframe appliqué au choix du menu fichier body menu*/
 
 @keyframes choixone
 {
    from { transform: scale(0)}
    to { transform: scale (1)}
+}
+
+/* Keyframe appliqué au spinner fichier laoder*/
+@keyframes spin {
+
+   from { transform: rotate(0deg)}
+    to { transform: rotate(360deg) }
+}
+
+/* Keyframe appliqué au loader fichier laoder*/
+@keyframes load {
+ 0% { opacity: 1}
+ 50% {opacity: 0.8}
+ 100% { opacity: 0}
+}
+
+
+/* Keyframe appliqué au bouncer fichier laoder*/
+@keyframes boun
+{
+0% {transform: translateY(50px)}
+100% {transform :translateY(-50px)}
 }
