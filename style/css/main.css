@@ -19,14 +19,11 @@
 }
 /* Keyframe appliqué au loader fichier laoder*/
 @keyframes load {
-  0% {
+  from {
     opacity: 1;
   }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
+  to {
+    visibility: hidden;
   }
 }
 /* Keyframe appliqué au bouncer fichier laoder*/
@@ -36,6 +33,24 @@
   }
   100% {
     transform: translateY(-50px);
+  }
+}
+/* keyframe appliqué à l'icone wishlist*/
+@keyframes moove {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale 0.2;
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .bouton {
@@ -310,23 +325,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   color: transparent;
 }
 
-@keyframes moove {
-  0% {
-    transform: scale(0);
-  }
-  20% {
-    transform: scale 0.2;
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  80% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /*.icon_wishlist_fond
         {
             position:relative;
@@ -379,6 +377,7 @@ h4, .prix {
 
 h4 {
   margin-bottom: 10px;
+  text-overflow: ellipsis;
 }
 
 .categorie_de_plat {
@@ -402,12 +401,46 @@ h4 {
   line-height: 0px;
   height: 60px;
   margin-bottom: 10px;
+  position: relative;
+  text-overflow: ellipsis;
 }
 
 .detail_et_prix {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.ok {
+  position: absolute;
+  background-color: #99E2D0;
+  width: 25%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: scaleX(0);
+  transition: 500ms;
+  transform-origin: right;
+  display: flex;
+}
+
+.icon_ok {
+  color: black;
+}
+
+.prix {
+  position: relative;
+  display: inline-block;
+}
+
+.prix:hover {
+  margin-right: 70px;
+  transition: margin-right 500ms;
+}
+.prix:hover + .ok {
+  transform: scaleX(1);
 }
 
 .les_choix {
@@ -469,7 +502,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: load 4s;
+  animation: load 2s;
   animation-fill-mode: forwards;
 }
 

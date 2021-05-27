@@ -41,15 +41,7 @@
 
 }
 
-@keyframes moove 
-{
-    0% {transform: scale(0)}
-    20% {transform: scale (0.2)}
-    50% {transform: scale(0.5)}
-    80% {transform: scale(0.8)}
-    100% {transform: scale(1)}
-  
-}
+
         /*.icon_wishlist_fond
         {
             position:relative;
@@ -110,6 +102,7 @@ h4, .prix
 h4
 {
     margin-bottom: 10px;
+    text-overflow: ellipsis;
 }
 
 .categorie_de_plat
@@ -126,6 +119,8 @@ h4
     line-height: 0px;
     height: 60px;
     margin-bottom:10px;
+    position:relative;
+    text-overflow: ellipsis;
 }
 
 .detail_et_prix {
@@ -134,6 +129,44 @@ h4
     align-items: center;
 }
 
+.ok 
+{
+    position: absolute;
+    background-color: #99E2D0;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform:scaleX(0);
+    transition:500ms;
+    transform-origin: right;
+    display: flex;
+    
+}
+
+.icon_ok
+{
+    color:black;
+}
+.prix
+{
+    position:relative;
+    display: inline-block;
+
+}
+
+
+.prix{
+    &:hover{
+        margin-right: 70px;
+        transition:margin-right 500ms;
+    }
+    &:hover +.ok{
+        transform:scaleX(1);
+    }
+}
 
 
 .les_choix

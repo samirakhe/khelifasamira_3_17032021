@@ -12,13 +12,14 @@
 
    from { transform: rotate(0deg)}
     to { transform: rotate(360deg) }
+    
 }
 
 /* Keyframe appliqué au loader fichier laoder*/
 @keyframes load {
- 0% { opacity: 1}
- 50% {opacity: 0.8}
- 100% { opacity: 0}
+ from { opacity: 1}
+ to { visibility: hidden}
+
 }
 
 
@@ -27,4 +28,15 @@
 {
 0% {transform: translateY(50px)}
 100% {transform :translateY(-50px)}
+}
+
+/* keyframe appliqué à l'icone wishlist*/
+@keyframes moove 
+{
+    0% {transform: scale(0)}
+    20% {transform: scale (0.2)}
+    50% {transform: scale(0.5)}
+    80% {transform: scale(0.8)}
+    100% {transform: scale(1)}
+  
 }
