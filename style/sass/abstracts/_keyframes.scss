@@ -40,3 +40,10 @@
     100% {transform: scale(1)}
   
 }
+
+/* keyframes appliquée à l'icone de validation du menu*/
+@keyframes rotateok
+{
+    0% {transform:rotate(50deg)}
+    100% {transform:rotate(360deg)}
+}

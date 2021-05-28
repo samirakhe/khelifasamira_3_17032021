@@ -21,48 +21,23 @@
     margin-right: 15px;
 
         .icon_wishlist_fond
-            { 
+        { 
         position: relative;
         left:31px;
         color:black;
-            }
-                
-        .icon_wishlist_dessus
-                    {
-                position: relative;
-                animation-name:moove;
-                animation-duration: 2s;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                    }
-            
-
-}
-
-
-        /*.icon_wishlist_fond
-        {
-            position:relative;
-            left: 31px;
-            color:black;
         }
+           
         .icon_wishlist_dessus
-            {
-                position: relative;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                opacity: 0;
-                    &:hover {
-                    opacity: 1;
-                    transition: opacity 650ms ease-in-out;
-                    }
-            }
-       
-}*/
+        {
+        position: relative;
+        animation-name:moove;
+        animation-duration: 2s;
+        background-image:$degrade;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        }
+}
 
 .h3_menu
 {
@@ -92,43 +67,64 @@
         {
             font-family: $primary_font;
         }
-
 }
-
-h4, .prix
-{
-    font-family: $bold_font;
-}
-h4
-{
-    margin-bottom: 10px;
-    text-overflow: ellipsis;
-}
-
 .categorie_de_plat
 {
    @include categorie_entreeplatdessert;
-   
-}
 
-.les_choix
-
-{
-    @include encart;
-    background-color: white;
-    line-height: 0px;
-    height: 60px;
-    margin-bottom:10px;
-    position:relative;
-    text-overflow: ellipsis;
+   .les_choix
+        {
+        @include encart;
+        background-color: white;
+        line-height: 0px;
+        height: 60px;
+        margin-bottom:10px;
+        position:relative;
+        animation-name:choixone; /* Voir fichier keyframes*/
+        animation-duration:1s;
+        animation-fill-mode: backwards;
+        }
+    h4, .prix
+        {
+        font-family: $bold_font;
+        }
+    h4
+        {
+        margin-bottom: 10px;
+        text-overflow: ellipsis;
+        }
 }
 
 .detail_et_prix {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .prix
+    {
+        position:relative;
+    }
+    .icon_ok
+    {
+        color: white;
+        font-size: 33px;
+    }
+    &:hover
+        {
+            .prix
+            {
+                margin-right:70px;
+                transition:margin-right 100ms;
+            }
+            .prix +.ok
+            {
+                transform:scaleX(1);
+            }
+            .icon_ok
+            {
+            animation: rotateok 200ms ease-in-out  2  forwards;
+            }
+        } 
 }
-
 .ok 
 {
     position: absolute;
@@ -143,39 +139,9 @@ h4
     transition:500ms;
     transform-origin: right;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
-
-.icon_ok
-{
-    color:black;
-}
-.prix
-{
-    position:relative;
-    display: inline-block;
-
-}
-
-
-.prix{
-    &:hover{
-        margin-right: 70px;
-        transition:margin-right 500ms;
-    }
-    &:hover +.ok{
-        transform:scaleX(1);
-    }
-}
-
-
-.les_choix
-{
-    animation-name:choixone; /* Voir fichier keyframes*/
-    animation-duration:1s;
-    animation-fill-mode: backwards;
-}
-
 
 .categorie_de_plat :nth-child(1)
 {
@@ -195,3 +161,28 @@ h4
 {
     animation-delay: 1s;
 }
+
+
+
+
+ /*.icon_wishlist_fond
+        {
+            position:relative;
+            left: 31px;
+            color:black;
+        }
+        .icon_wishlist_dessus
+            {
+                position: relative;
+                background-image:$degrade;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color:transparent;
+                opacity: 0;
+                    &:hover {
+                    opacity: 1;
+                    transition: opacity 650ms ease-in-out;
+                    }
+            }
+       
+}*/

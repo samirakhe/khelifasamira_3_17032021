@@ -53,6 +53,15 @@
     transform: scale(1);
   }
 }
+/* keyframes appliquée à l'icone de validation du menu*/
+@keyframes rotateok {
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .bouton {
   cursor: pointer;
   background-color: transparent;
@@ -325,27 +334,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   color: transparent;
 }
 
-/*.icon_wishlist_fond
-        {
-            position:relative;
-            left: 31px;
-            color:black;
-        }
-        .icon_wishlist_dessus
-            {
-                position: relative;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                opacity: 0;
-                    &:hover {
-                    opacity: 1;
-                    transition: opacity 650ms ease-in-out;
-                    }
-            }
-
-}*/
 .h3_menu {
   font-family: "robotothin";
   padding-bottom: 5px;
@@ -371,23 +359,13 @@ body.page_menu .bloc_page header .fleche_precedent {
   font-family: "shrikhandregular";
 }
 
-h4, .prix {
-  font-family: "robotobold";
-}
-
-h4 {
-  margin-bottom: 10px;
-  text-overflow: ellipsis;
-}
-
 .categorie_de_plat {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 400px;
 }
-
-.les_choix {
+.categorie_de_plat .les_choix {
   border: none;
   padding: 15px;
   width: 20em;
@@ -402,6 +380,16 @@ h4 {
   height: 60px;
   margin-bottom: 10px;
   position: relative;
+  animation-name: choixone;
+  /* Voir fichier keyframes*/
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+.categorie_de_plat h4, .categorie_de_plat .prix {
+  font-family: "robotobold";
+}
+.categorie_de_plat h4 {
+  margin-bottom: 10px;
   text-overflow: ellipsis;
 }
 
@@ -409,6 +397,23 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.detail_et_prix .prix {
+  position: relative;
+}
+.detail_et_prix .icon_ok {
+  color: white;
+  font-size: 33px;
+}
+.detail_et_prix:hover .prix {
+  margin-right: 70px;
+  transition: margin-right 100ms;
+}
+.detail_et_prix:hover .prix + .ok {
+  transform: scaleX(1);
+}
+.detail_et_prix:hover .icon_ok {
+  animation: rotateok 200ms ease-in-out 2 forwards;
 }
 
 .ok {
@@ -424,30 +429,8 @@ h4 {
   transition: 500ms;
   transform-origin: right;
   display: flex;
-}
-
-.icon_ok {
-  color: black;
-}
-
-.prix {
-  position: relative;
-  display: inline-block;
-}
-
-.prix:hover {
-  margin-right: 70px;
-  transition: margin-right 500ms;
-}
-.prix:hover + .ok {
-  transform: scaleX(1);
-}
-
-.les_choix {
-  animation-name: choixone;
-  /* Voir fichier keyframes*/
-  animation-duration: 1s;
-  animation-fill-mode: backwards;
+  justify-content: center;
+  align-items: center;
 }
 
 .categorie_de_plat :nth-child(1) {
@@ -466,6 +449,27 @@ h4 {
   animation-delay: 1s;
 }
 
+/*.icon_wishlist_fond
+        {
+            position:relative;
+            left: 31px;
+            color:black;
+        }
+        .icon_wishlist_dessus
+            {
+                position: relative;
+                background-image:$degrade;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color:transparent;
+                opacity: 0;
+                    &:hover {
+                    opacity: 1;
+                    transition: opacity 650ms ease-in-out;
+                    }
+            }
+
+}*/
 @font-face {
   font-family: "shrikhandregular";
   src: url("shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
