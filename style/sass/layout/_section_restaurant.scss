@@ -58,8 +58,6 @@
  }
  .icon_wishlist
  {
-     font-size: 2em;
-     
+     @include anim_wishlisht;
      
 }
-

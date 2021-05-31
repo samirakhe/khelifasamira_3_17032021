@@ -17,3 +17,29 @@
         height:400px;
 
 }
+
+@mixin anim_wishlisht {
+    
+        .icon_wishlist_fond
+        { 
+        position: relative;
+        left:31px;
+        color:black;
+        font-size: 33px;
+        left:37px;
+        }
+           
+        .icon_wishlist_dessus
+        {
+        position: relative;
+        animation-name:moove;
+        animation-duration: 2s;
+        background-image:$degrade;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        font-size: 33px;
+        left:0px;
+        }
+                
+}

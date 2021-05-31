@@ -159,6 +159,7 @@ h3, h2 {
 }
 
 .etapes {
+  cursor: pointer;
   border: none;
   padding: 15px;
   width: 20em;
@@ -255,8 +256,23 @@ a:link {
   text-decoration: none;
 }
 
-.icon_wishlist {
-  font-size: 2em;
+.icon_wishlist .icon_wishlist_fond {
+  position: relative;
+  left: 31px;
+  color: black;
+  font-size: 33px;
+  left: 37px;
+}
+.icon_wishlist .icon_wishlist_dessus {
+  position: relative;
+  animation-name: moove;
+  animation-duration: 2s;
+  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 33px;
+  left: 0px;
 }
 
 footer {
@@ -316,13 +332,14 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 
 .icon_wishlist {
-  font-size: 25px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .icon_wishlist .icon_wishlist_fond {
   position: relative;
   left: 31px;
   color: black;
+  font-size: 33px;
+  left: 37px;
 }
 .icon_wishlist .icon_wishlist_dessus {
   position: relative;
@@ -332,6 +349,8 @@ body.page_menu .bloc_page header .fleche_precedent {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 33px;
+  left: 0px;
 }
 
 .h3_menu {
@@ -413,7 +432,8 @@ body.page_menu .bloc_page header .fleche_precedent {
   transform: scaleX(1);
 }
 .detail_et_prix:hover .icon_ok {
-  animation: rotateok 200ms ease-in-out 2 forwards;
+  animation: rotateok 500ms ease-in-out 1 forwards;
+  cursor: pointer;
 }
 
 .ok {
