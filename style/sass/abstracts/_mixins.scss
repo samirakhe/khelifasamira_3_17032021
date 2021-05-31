@@ -1,7 +1,7 @@
 @mixin encart {
         border:none;
         padding:15px;
-        width: 20em;
+        width: 21em;
         height:75px;
         font-size: 0.9em;
         border-radius: 20px;
@@ -23,23 +23,39 @@
         .icon_wishlist_fond
         { 
         position: relative;
-        left:31px;
+        
         color:black;
         font-size: 33px;
         left:37px;
+
+                &:hover{
+                        /*color:transparent;*/
+                        + .icon_wishlist_dessus
+                                {
+                                position: relative;
+                                animation-name:moove;
+                                animation-duration: 2s;
+                                animation-fill-mode: backwards;
+                                background-image:$degrade;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                color:transparent;
+                                font-size: 33px;
+                                left:0px;
+                                visibility: visible;
+                                }
+                }
         }
-           
         .icon_wishlist_dessus
         {
-        position: relative;
-        animation-name:moove;
-        animation-duration: 2s;
-        background-image:$degrade;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color:transparent;
-        font-size: 33px;
-        left:0px;
+                visibility: hidden;
         }
-                
+}
+
+@mixin ellipsis {
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 12px;
+    
 }

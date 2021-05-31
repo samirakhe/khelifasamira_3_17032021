@@ -65,22 +65,47 @@
         animation-name:choixone; /* Voir fichier keyframes*/
         animation-duration:1s;
         animation-fill-mode: backwards;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .nom_du_plat
+        {
+            transition: width 300ms;
         }
-    h4, .prix
+            &:hover
+            {
+                .nom_du_plat
+            {
+                width: 73%;
+                
+            }
+            }
+       
+
+        }
+    h4, .prix,span
         {
         font-family: $bold_font;
         }
-    h4
+    h4, span
         {
         margin-bottom: 10px;
-        text-overflow: ellipsis;
+        @include ellipsis;
         }
+    .nom_du_plat
+    {
+        @include ellipsis;
+        padding-top:7px;
+    }
 }
 
 .detail_et_prix {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include ellipsis;
+    height: 30px;
     .prix
     {
         position:relative;
@@ -89,6 +114,13 @@
     {
         color: white;
         font-size: 33px;
+    }
+    p.plat
+    {
+        @include ellipsis;
+        width: 100%;
+        margin-right:6px;
+        padding-top:10px;
     }
     &:hover
         {
@@ -106,8 +138,11 @@
             animation: rotateok 500ms ease-in-out  1  forwards;
             cursor: pointer;
             }
+            
+            
         } 
 }
+
 .ok 
 {
     position: absolute;
