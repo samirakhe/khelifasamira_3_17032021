@@ -68,10 +68,10 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        .nom_du_plat
+       /* .nom_du_plat
         {
             transition: width 300ms;
-        }
+        }*/
             &:hover
             {
                 .nom_du_plat
@@ -92,11 +92,11 @@
         margin-bottom: 10px;
         @include ellipsis;
         }
-    .nom_du_plat
+    /*.nom_du_plat
     {
         @include ellipsis;
         padding-top:7px;
-    }
+    }*/
 }
 
 .detail_et_prix {

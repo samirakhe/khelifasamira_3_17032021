@@ -397,6 +397,11 @@ body.page_menu .bloc_page header .fleche_precedent {
   flex-direction: column;
   justify-content: space-between;
   height: 400px;
+  /*.nom_du_plat
+  {
+      @include ellipsis;
+      padding-top:7px;
+  }*/
 }
 .categorie_de_plat .les_choix {
   border: none;
@@ -420,9 +425,10 @@ body.page_menu .bloc_page header .fleche_precedent {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-.categorie_de_plat .les_choix .nom_du_plat {
-  transition: width 300ms;
+  /* .nom_du_plat
+   {
+       transition: width 300ms;
+   }*/
 }
 .categorie_de_plat .les_choix:hover .nom_du_plat {
   width: 73%;
@@ -436,13 +442,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   white-space: nowrap;
   overflow: hidden;
   height: 12px;
-}
-.categorie_de_plat .nom_du_plat {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  height: 12px;
-  padding-top: 7px;
 }
 
 .detail_et_prix {
