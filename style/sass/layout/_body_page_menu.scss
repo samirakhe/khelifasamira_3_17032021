@@ -17,7 +17,6 @@
 
 .icon_wishlist
 {
-    @include anim_wishlisht;
     margin-right:20px;
 }
 
@@ -56,11 +55,9 @@
 
    .les_choix
         {
+        @include anim_wishlisht;
         @include encart;
         background-color: white;
-        line-height: 0px;
-        height: 60px;
-        margin-bottom:10px;
         position:relative;
         animation-name:choixone; /* Voir fichier keyframes*/
         animation-duration:1s;
@@ -68,10 +65,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-       /* .nom_du_plat
-        {
-            transition: width 300ms;
-        }*/
+    
             &:hover
             {
                 .nom_du_plat
@@ -83,20 +77,16 @@
        
 
         }
-    h4, .prix,span
+    h4, .prix
         {
         font-family: $bold_font;
         }
-    h4, span
+    h4
         {
         margin-bottom: 10px;
         @include ellipsis;
         }
-    /*.nom_du_plat
-    {
-        @include ellipsis;
-        padding-top:7px;
-    }*/
+    
 }
 
 .detail_et_prix {
@@ -119,8 +109,6 @@
     {
         @include ellipsis;
         width: 100%;
-        margin-right:6px;
-        padding-top:10px;
     }
     &:hover
         {

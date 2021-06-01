@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.icon_wishlist_dessus {
+  visibility: hidden;
+}
+
 /* keyframe appliqué au choix du menu fichier body menu*/
 @keyframes choixone {
   from {
@@ -50,7 +54,7 @@
     transform: scale(0.8);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 /* keyframes appliquée à l'icone de validation du menu*/
@@ -87,6 +91,24 @@
 
 .bouton.btnmenu {
   padding: 11px 41px;
+  margin-top: 70px;
+}
+
+.icon_wishlist .icon_wishlist_fond {
+  position: relative;
+  color: black;
+  font-size: 33px;
+  left: 37px;
+}
+.icon_wishlist .icon_wishlist_fond:hover + .icon_wishlist_dessus {
+  position: relative;
+  animation: moove 2s ease-in forwards;
+  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 33px;
+  visibility: visible;
 }
 
 body {
@@ -262,24 +284,15 @@ a:link {
   font-size: 33px;
   left: 37px;
 }
-.icon_wishlist .icon_wishlist_fond:hover {
-  /*color:transparent;*/
-}
 .icon_wishlist .icon_wishlist_fond:hover + .icon_wishlist_dessus {
   position: relative;
-  animation-name: moove;
-  animation-duration: 2s;
-  animation-fill-mode: backwards;
+  animation: moove 2s ease-in forwards;
   background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 33px;
-  left: 0px;
   visibility: visible;
-}
-.icon_wishlist .icon_wishlist_dessus {
-  visibility: hidden;
 }
 
 footer {
@@ -341,31 +354,6 @@ body.page_menu .bloc_page header .fleche_precedent {
 .icon_wishlist {
   margin-right: 20px;
 }
-.icon_wishlist .icon_wishlist_fond {
-  position: relative;
-  color: black;
-  font-size: 33px;
-  left: 37px;
-}
-.icon_wishlist .icon_wishlist_fond:hover {
-  /*color:transparent;*/
-}
-.icon_wishlist .icon_wishlist_fond:hover + .icon_wishlist_dessus {
-  position: relative;
-  animation-name: moove;
-  animation-duration: 2s;
-  animation-fill-mode: backwards;
-  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 33px;
-  left: 0px;
-  visibility: visible;
-}
-.icon_wishlist .icon_wishlist_dessus {
-  visibility: hidden;
-}
 
 .h3_menu {
   font-family: "robotothin";
@@ -396,12 +384,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
-  /*.nom_du_plat
-  {
-      @include ellipsis;
-      padding-top:7px;
-  }*/
+  height: 450px;
 }
 .categorie_de_plat .les_choix {
   border: none;
@@ -414,9 +397,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   margin: auto;
   margin-bottom: 10px;
   background-color: white;
-  line-height: 0px;
-  height: 60px;
-  margin-bottom: 10px;
   position: relative;
   animation-name: choixone;
   /* Voir fichier keyframes*/
@@ -425,23 +405,34 @@ body.page_menu .bloc_page header .fleche_precedent {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* .nom_du_plat
-   {
-       transition: width 300ms;
-   }*/
+}
+.categorie_de_plat .les_choix .icon_wishlist_fond {
+  position: relative;
+  color: black;
+  font-size: 33px;
+  left: 37px;
+}
+.categorie_de_plat .les_choix .icon_wishlist_fond:hover + .icon_wishlist_dessus {
+  position: relative;
+  animation: moove 2s ease-in forwards;
+  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 33px;
+  visibility: visible;
 }
 .categorie_de_plat .les_choix:hover .nom_du_plat {
   width: 73%;
 }
-.categorie_de_plat h4, .categorie_de_plat .prix, .categorie_de_plat span {
+.categorie_de_plat h4, .categorie_de_plat .prix {
   font-family: "robotobold";
 }
-.categorie_de_plat h4, .categorie_de_plat span {
+.categorie_de_plat h4 {
   margin-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  height: 12px;
 }
 
 .detail_et_prix {
@@ -452,7 +443,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  height: 12px;
   height: 30px;
 }
 .detail_et_prix .prix {
@@ -466,10 +456,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  height: 12px;
   width: 100%;
-  margin-right: 6px;
-  padding-top: 10px;
 }
 .detail_et_prix:hover .prix {
   margin-right: 70px;
