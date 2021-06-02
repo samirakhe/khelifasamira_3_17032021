@@ -17,7 +17,11 @@
         height:450px;
 
 }
-
+@keyframes moovebis
+{
+        0% {transform: scale(1)}
+        100% {transform: scale(0)}
+}
 @mixin anim_wishlisht {
     
         .icon_wishlist_fond
@@ -27,11 +31,17 @@
         font-size: 33px;
         left:37px;
         
-
+                &:hover
+                {
+                        
+                                animation: moovebis 2s linear forwards;
+                              
+                                
+                }
                 &:hover+.icon_wishlist_dessus
                                 {
                                 position: relative;
-                                animation: moove 2s ease-in forwards;
+                                animation: moove 300ms ease-in-out forwards;
                                 background-image:$degrade;
                                 background-clip: text;
                                 -webkit-background-clip: text;
@@ -49,10 +59,7 @@
                 visibility: hidden;
                 position: relative;
         }
-        .icon_wishlist_fond :hover
-                        {
-                                visibility: hidden;
-                        }
+        
 
 
 @mixin ellipsis {

@@ -33,11 +33,11 @@
 /* keyframe appliqué à l'icone wishlist*/
 @keyframes moove 
 {
-    0% {transform: scale(0)}
+    0% {transform: scale(0.1)}
     20% {transform: scale(0.2)}
     50% {transform: scale(0.5)}
     80% {transform: scale(0.8)}
-    100% {transform: scale(1.1)}
+    100% {transform: scale(1)}
   
 }
 
