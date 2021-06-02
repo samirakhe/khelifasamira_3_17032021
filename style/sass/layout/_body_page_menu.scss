@@ -15,10 +15,7 @@
     align-items: center;
 }
 
-.icon_wishlist
-{
-    margin-right:20px;
-}
+
 
 .h3_menu
 {
@@ -47,6 +44,7 @@
     h2
         {
             font-family: $primary_font;
+            font-weight: normal;
         }
 }
 .categorie_de_plat
@@ -171,24 +169,4 @@
 
 
 
- /*.icon_wishlist_fond
-        {
-            position:relative;
-            left: 31px;
-            color:black;
-        }
-        .icon_wishlist_dessus
-            {
-                position: relative;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                opacity: 0;
-                    &:hover {
-                    opacity: 1;
-                    transition: opacity 650ms ease-in-out;
-                    }
-            }
-       
-}*/
+ 

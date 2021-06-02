@@ -1,6 +1,11 @@
 @charset "UTF-8";
 .icon_wishlist_dessus {
   visibility: hidden;
+  position: relative;
+}
+
+.icon_wishlist_fond :hover {
+  visibility: hidden;
 }
 
 /* keyframe appliqué au choix du menu fichier body menu*/
@@ -94,6 +99,10 @@
   margin-top: 70px;
 }
 
+.icon_wishlist {
+  width: 80px;
+  display: flex;
+}
 .icon_wishlist .icon_wishlist_fond {
   position: relative;
   color: black;
@@ -109,8 +118,30 @@
   color: transparent;
   font-size: 33px;
   visibility: visible;
+  left: 5px;
 }
 
+/*.icon_wishlist_fond
+        {
+            position:relative;
+            left: 31px;
+            color:black;
+        }
+        .icon_wishlist_dessus
+            {
+                position: relative;
+                background-image:$degrade;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color:transparent;
+                opacity: 0;
+                    &:hover {
+                    opacity: 1;
+                    transition: opacity 650ms ease-in-out;
+                    }
+            }
+
+}*/
 body {
   font-family: "robotothin";
   font-weight: bold;
@@ -293,6 +324,7 @@ a:link {
   color: transparent;
   font-size: 33px;
   visibility: visible;
+  left: 5px;
 }
 
 footer {
@@ -351,10 +383,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   align-items: center;
 }
 
-.icon_wishlist {
-  margin-right: 20px;
-}
-
 .h3_menu {
   font-family: "robotothin";
   padding-bottom: 5px;
@@ -378,6 +406,7 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 .menu_du_restaurant h2 {
   font-family: "shrikhandregular";
+  font-weight: normal;
 }
 
 .categorie_de_plat {
@@ -421,6 +450,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   color: transparent;
   font-size: 33px;
   visibility: visible;
+  left: 5px;
 }
 .categorie_de_plat .les_choix:hover .nom_du_plat {
   width: 73%;
@@ -503,27 +533,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   animation-delay: 1s;
 }
 
-/*.icon_wishlist_fond
-        {
-            position:relative;
-            left: 31px;
-            color:black;
-        }
-        .icon_wishlist_dessus
-            {
-                position: relative;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                opacity: 0;
-                    &:hover {
-                    opacity: 1;
-                    transition: opacity 650ms ease-in-out;
-                    }
-            }
-
-}*/
 @font-face {
   font-family: "shrikhandregular";
   src: url("shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");

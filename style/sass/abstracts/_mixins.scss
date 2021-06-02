@@ -26,10 +26,9 @@
         color:black;
         font-size: 33px;
         left:37px;
+        
 
                 &:hover+.icon_wishlist_dessus
-                        /*color:transparent;*/
-                       
                                 {
                                 position: relative;
                                 animation: moove 2s ease-in forwards;
@@ -39,14 +38,21 @@
                                 color:transparent;
                                 font-size: 33px;
                                 visibility: visible;
+                                left: 5px;
                                 
                                 }
+                        
                 }
         }
         .icon_wishlist_dessus
         {
                 visibility: hidden;
+                position: relative;
         }
+        .icon_wishlist_fond :hover
+                        {
+                                visibility: hidden;
+                        }
 
 
 @mixin ellipsis {
