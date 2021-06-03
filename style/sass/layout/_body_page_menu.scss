@@ -31,7 +31,7 @@
     border-top-left-radius: 33px;
     border-top-right-radius: 33px;
     position:relative;
-    top:-31px;
+    margin-top:-31px;
 
     .entree_plat_dessert
         {
@@ -83,6 +83,7 @@
         {
         margin-bottom: 10px;
         @include ellipsis;
+        margin-top:0px;
         }
     
 }

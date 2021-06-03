@@ -4,7 +4,7 @@
 @keyframes choixone
 {
    from { transform: scale(0)}
-   to { transform: scale (1)}
+   to { transform: scale(1)}
 }
 
 /* Keyframe appliqué au spinner fichier laoder*/
@@ -17,8 +17,10 @@
 
 /* Keyframe appliqué au loader fichier laoder*/
 @keyframes load {
- from { opacity: 1}
- to { visibility: hidden}
+ 0% { opacity: 1}
+
+ 100% { visibility: hidden}
+ 
 
 }
 
@@ -41,6 +43,12 @@
   
 }
 
+/*keyframe appliqué au coeur du fond*/
+@keyframes moovebis
+{
+        0% {transform: scale(1)}
+        100% {transform: scale(0)}
+}
 /* keyframes appliquée à l'icone de validation du menu*/
 @keyframes rotateok
 {

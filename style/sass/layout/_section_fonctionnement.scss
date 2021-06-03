@@ -51,6 +51,7 @@ h3,h2
 {
     cursor: pointer;
     @include encart;
+    height: 75px;
     transition: all 0.5s ease;
         &:hover
         {
