@@ -27,28 +27,24 @@
 
  .icon_wishlist
  {
-    /*@include anim_wishlisht;*/
-    width: 80px;
-    height: 80px;
+    width: 33px;
+    height: 33px;
     position:relative;
  }
 
  .icon_wishlist_fond
  {
             transform: scale(1);
-            transition : transform 400ms;
-            width: 80px;
-            height: 80px;
+           
+            font-size: 33px;
             position: absolute;
-            display: block;
             top:0;
  }
  .icon_wishlist_dessus
 {
             transform: scale(0);
-            transition : transform 400ms;
-            width: 80px;
-            height: 80px;
+           
+            font-size: 33px;
             position: absolute;
             display: block;
             top:0;  
@@ -57,17 +53,17 @@
             color:transparent;
             visibility: visible;
 }
-    .icon_wishlist:hover .icon_wishlist_fond
+    /*.icon_wishlist:hover .icon_wishlist_fond
         {
             transform: scale(0);
-           
             
-        }
+            
+        }*/
 
         .icon_wishlist:hover .icon_wishlist_dessus
         {
-            transform : scale(1);
-        
+            transform : scale(0.88);
+            transition : transform 700ms;
         }
     
 
@@ -77,6 +73,7 @@
             position:relative;
             left: 31px;
             color:black;
+            font-size: 33px;
         }
         .icon_wishlist_dessus
             {
@@ -85,6 +82,7 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 color:transparent;
+                font-size: 33px;
                 opacity: 0;
                     &:hover {
                     opacity: 1;
@@ -92,4 +90,4 @@
                     }
             }
        
-}*/
+*/

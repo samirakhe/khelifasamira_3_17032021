@@ -63,6 +63,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        overflow: hidden;
     
             &:hover
             {
@@ -72,7 +73,25 @@
                 
             }
             }
-       
+            &:hover
+            {
+                .prix
+                {
+                    margin-right:70px;
+                    transition:margin-right 100ms;
+                }
+                .prix +.ok
+                {
+                    transform:scaleX(1);
+                }
+                .icon_ok
+                {
+                animation: rotateok 500ms ease-in-out  1  forwards;
+                cursor: pointer;
+                }
+                
+                
+            } 
 
         }
     h4, .prix
@@ -109,25 +128,7 @@
         @include ellipsis;
         width: 100%;
     }
-    &:hover
-        {
-            .prix
-            {
-                margin-right:70px;
-                transition:margin-right 100ms;
-            }
-            .prix +.ok
-            {
-                transform:scaleX(1);
-            }
-            .icon_ok
-            {
-            animation: rotateok 500ms ease-in-out  1  forwards;
-            cursor: pointer;
-            }
-            
-            
-        } 
+   
 }
 
 .ok 

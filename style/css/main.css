@@ -156,27 +156,21 @@
     }
  }*/
 .icon_wishlist {
-  /*@include anim_wishlisht;*/
-  width: 80px;
-  height: 80px;
+  width: 33px;
+  height: 33px;
   position: relative;
 }
 
 .icon_wishlist_fond {
   transform: scale(1);
-  transition: transform 400ms;
-  width: 80px;
-  height: 80px;
+  font-size: 33px;
   position: absolute;
-  display: block;
   top: 0;
 }
 
 .icon_wishlist_dessus {
   transform: scale(0);
-  transition: transform 400ms;
-  width: 80px;
-  height: 80px;
+  font-size: 33px;
   position: absolute;
   display: block;
   top: 0;
@@ -186,12 +180,15 @@
   visibility: visible;
 }
 
-.icon_wishlist:hover .icon_wishlist_fond {
-  transform: scale(0);
-}
+/*.icon_wishlist:hover .icon_wishlist_fond
+    {
+        transform: scale(0);
 
+
+    }*/
 .icon_wishlist:hover .icon_wishlist_dessus {
-  transform: scale(1);
+  transform: scale(0.88);
+  transition: transform 700ms;
 }
 
 /*.icon_wishlist_fond
@@ -199,6 +196,7 @@
             position:relative;
             left: 31px;
             color:black;
+            font-size: 33px;
         }
         .icon_wishlist_dessus
             {
@@ -207,6 +205,7 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 color:transparent;
+                font-size: 33px;
                 opacity: 0;
                     &:hover {
                     opacity: 1;
@@ -214,7 +213,7 @@
                     }
             }
 
-}*/
+*/
 body {
   font-family: "robotothin";
   font-weight: bold;
@@ -497,9 +496,21 @@ body.page_menu .bloc_page header .fleche_precedent {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
 }
 .categorie_de_plat .les_choix:hover .nom_du_plat {
   width: 73%;
+}
+.categorie_de_plat .les_choix:hover .prix {
+  margin-right: 70px;
+  transition: margin-right 100ms;
+}
+.categorie_de_plat .les_choix:hover .prix + .ok {
+  transform: scaleX(1);
+}
+.categorie_de_plat .les_choix:hover .icon_ok {
+  animation: rotateok 500ms ease-in-out 1 forwards;
+  cursor: pointer;
 }
 .categorie_de_plat h4, .categorie_de_plat .prix {
   font-family: "robotobold";
@@ -534,17 +545,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-}
-.detail_et_prix:hover .prix {
-  margin-right: 70px;
-  transition: margin-right 100ms;
-}
-.detail_et_prix:hover .prix + .ok {
-  transform: scaleX(1);
-}
-.detail_et_prix:hover .icon_ok {
-  animation: rotateok 500ms ease-in-out 1 forwards;
-  cursor: pointer;
 }
 
 .ok {
@@ -582,27 +582,25 @@ body.page_menu .bloc_page header .fleche_precedent {
 
 @font-face {
   font-family: "shrikhandregular";
-  src: url("../font/shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
+  src: url("../font/shrikand/shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Regular.eot");
-  src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  font-family: "robotoregular";
+  src: url("../font/regular/roboto-regular.woff2") url("roboto-regular.woff2") format("woff2"), url("../font/regular/roboto-regular.woff") url("roboto-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "robotobold";
-  src: url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff");
+  src: url("../font/robotobold/roboto-bold-webfont.woff2") url "roboto-bold-webfont.woff2" format("woff2"), url("../font/robotobold/roboto-bold-webfont.woff") url "roboto-bold-webfont.woff" format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotothin";
-  src: url("roboto-thin-webfont.woff2") format("woff2"), url("roboto-thin-webfont.woff") format("woff");
+  src: url("../font/robothin/roboto-thin-webfont.woff2") url "roboto-thin-webfont.woff2" format("woff2"), url("../font/robothin/roboto-thin-webfont.woff") url "roboto-thin-webfont.woff" format("woff");
   font-weight: normal;
   font-style: normal;
 }
