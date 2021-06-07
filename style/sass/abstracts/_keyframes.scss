@@ -18,7 +18,7 @@
 /* Keyframe appliqué au loader fichier laoder*/
 @keyframes load {
  0% { opacity: 1}
- 100% { visibility: hidden}
+ 100% { opacity:0; visibility: hidden}
 }
 
 
