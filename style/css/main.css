@@ -1,9 +1,41 @@
 @charset "UTF-8";
-.icon_wishlist_dessus {
-  visibility: hidden;
-  position: relative;
-}
+/*@mixin anim_wishlisht {
 
+        .icon_wishlist_fond
+        { 
+        position:relative;
+        left:37px;
+        color:black;
+        font-size: 33px;
+
+
+                &:hover
+                                {
+                                animation: moovebis 2s linear forwards;
+
+                                }
+
+                &:hover+.icon_wishlist_dessus
+                                {
+                                position: relative;
+                                animation: moove 300ms ease-in-out forwards;
+                                background-image:$degrade;
+                                -webkit-background-clip: text;
+                                color:transparent;
+                                font-size: 33px;
+                                visibility: visible;
+                                left: 5px;
+
+                                }
+
+                }
+}
+        .icon_wishlist_dessus
+        {
+                visibility: hidden;
+                position: relative;
+        }
+        */
 /* keyframe appliqué au choix du menu fichier body menu*/
 @keyframes choixone {
   from {
@@ -348,26 +380,11 @@ a:link {
   text-decoration: none;
 }
 
-.icon_wishlist .icon_wishlist_fond {
-  position: relative;
-  left: 37px;
-  color: black;
-  font-size: 33px;
-}
-.icon_wishlist .icon_wishlist_fond:hover {
-  animation: moovebis 2s linear forwards;
-}
-.icon_wishlist .icon_wishlist_fond:hover + .icon_wishlist_dessus {
-  position: relative;
-  animation: moove 300ms ease-in-out forwards;
-  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 33px;
-  visibility: visible;
-  left: 5px;
-}
+/*.icon_wishlist
+ {
+     @include anim_wishlisht;
 
+}*/
 footer {
   background-color: #353535;
   color: white;
@@ -457,6 +474,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   height: 450px;
 }
 .categorie_de_plat .les_choix {
+  /* @include anim_wishlisht;*/
   border: none;
   padding: 15px;
   width: 21em;
@@ -475,25 +493,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-.categorie_de_plat .les_choix .icon_wishlist_fond {
-  position: relative;
-  left: 37px;
-  color: black;
-  font-size: 33px;
-}
-.categorie_de_plat .les_choix .icon_wishlist_fond:hover {
-  animation: moovebis 2s linear forwards;
-}
-.categorie_de_plat .les_choix .icon_wishlist_fond:hover + .icon_wishlist_dessus {
-  position: relative;
-  animation: moove 300ms ease-in-out forwards;
-  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 33px;
-  visibility: visible;
-  left: 5px;
 }
 .categorie_de_plat .les_choix:hover .nom_du_plat {
   width: 73%;
