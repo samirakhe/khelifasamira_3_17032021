@@ -51,7 +51,11 @@
             height: 80px;
             position: absolute;
             display: block;
-            top:0;       
+            top:0;  
+            background-image:$degrade;
+            -webkit-background-clip: text;
+            color:transparent;
+            visibility: visible;
 }
     .icon_wishlist:hover .icon_wishlist_fond
         {
