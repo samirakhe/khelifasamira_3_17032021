@@ -180,15 +180,15 @@
   visibility: visible;
 }
 
-/*.icon_wishlist:hover .icon_wishlist_fond
-    {
-        transform: scale(0);
+/* .icon_wishlist:hover .icon_wishlist_fond
+     {
+         transform: scale(0);
 
 
-    }*/
+     }*/
 .icon_wishlist:hover .icon_wishlist_dessus {
-  transform: scale(0.88);
-  transition: transform 700ms;
+  transform: scale(0.9);
+  transition: transform 400ms;
 }
 
 /*.icon_wishlist_fond
