@@ -18,10 +18,7 @@
 /* Keyframe appliqué au loader fichier laoder*/
 @keyframes load {
  0% { opacity: 1}
-
  100% { visibility: hidden}
- 
-
 }
 
 
@@ -32,7 +29,7 @@
 100% {transform :translateY(-50px)}
 }
 
-/* keyframe appliqué à l'icone wishlist*/
+/* keyframe appliqué au coeur plein wishlist*/
 @keyframes moove 
 {
     0% {transform: scale(0.1)}
@@ -43,7 +40,7 @@
   
 }
 
-/*keyframe appliqué au coeur du fond*/
+/*keyframe appliqué au coeur du fond wishlist*/
 @keyframes moovebis
 {
         0% {transform: scale(1)}

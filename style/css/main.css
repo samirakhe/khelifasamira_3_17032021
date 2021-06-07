@@ -40,7 +40,7 @@
     transform: translateY(-50px);
   }
 }
-/* keyframe appliqué à l'icone wishlist*/
+/* keyframe appliqué au coeur plein wishlist*/
 @keyframes moove {
   0% {
     transform: scale(0.1);
@@ -58,7 +58,7 @@
     transform: scale(1);
   }
 }
-/*keyframe appliqué au coeur du fond*/
+/*keyframe appliqué au coeur du fond wishlist*/
 @keyframes moovebis {
   0% {
     transform: scale(1);
@@ -111,9 +111,9 @@
 }
 .icon_wishlist .icon_wishlist_fond {
   position: relative;
+  left: 37px;
   color: black;
   font-size: 33px;
-  left: 37px;
 }
 .icon_wishlist .icon_wishlist_fond:hover {
   animation: moovebis 2s linear forwards;
@@ -178,6 +178,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
+  width: 100%;
 }
 
 .iconelocalisation {
@@ -320,9 +321,9 @@ a:link {
 
 .icon_wishlist .icon_wishlist_fond {
   position: relative;
+  left: 37px;
   color: black;
   font-size: 33px;
-  left: 37px;
 }
 .icon_wishlist .icon_wishlist_fond:hover {
   animation: moovebis 2s linear forwards;
@@ -448,9 +449,9 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 .categorie_de_plat .les_choix .icon_wishlist_fond {
   position: relative;
+  left: 37px;
   color: black;
   font-size: 33px;
-  left: 37px;
 }
 .categorie_de_plat .les_choix .icon_wishlist_fond:hover {
   animation: moovebis 2s linear forwards;
@@ -549,7 +550,7 @@ body.page_menu .bloc_page header .fleche_precedent {
 
 @font-face {
   font-family: "shrikhandregular";
-  src: url("shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
+  src: url("../font/shrikhand-regular.woff2") format("woff2"), url("shrikhand-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -642,5 +643,8 @@ body.page_menu .bloc_page header .fleche_precedent {
   animation-timing-function: linear;
   margin-top: 90px;
 }
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=main.css.map */
