@@ -6,6 +6,14 @@
         justify-content: center;
         align-items: center;
         background-color: #EAEAEA;
+
+        @include deskonly
+        {
+            width: 30%;
+            margin: auto;
+            border:1px solid $secondary;
+            
+        }
        
     }
 
@@ -49,6 +57,11 @@ h3,h2
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+
+   @include deskonly {
+       flex-direction: row;
+       height: 100px;
+   }
 }
 .etapes
 {

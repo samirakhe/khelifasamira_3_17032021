@@ -18,6 +18,12 @@
 
 }
 
+@mixin deskonly {
+        @media screen and (min-width:1040px) {
+                @content;    
+        }
+}
+
 /*@mixin anim_wishlisht {
     
         .icon_wishlist_fond

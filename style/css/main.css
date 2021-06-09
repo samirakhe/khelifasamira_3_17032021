@@ -1,17 +1,4 @@
 @charset "UTF-8";
-@media screen and (min-width: 1024px) {
-  .barre_recherche {
-    width: 30%;
-    margin: auto;
-  }
-
-  .comment_reserver {
-    align-items: center;
-    height: 287px;
-    display: flex;
-    justify-content: space-between;
-  }
-}
 /*@mixin anim_wishlisht {
 
         .icon_wishlist_fond
@@ -90,6 +77,18 @@
 @keyframes moove {
   0% {
     transform: scale(0.1);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1);
@@ -182,7 +181,7 @@
 }
 
 .icon_wishlist_dessus {
-  transform: scale(0);
+  transform: scaleY(0);
   transition: transform 200ms ease-in-out;
   font-size: 33px;
   position: absolute;
@@ -202,7 +201,7 @@
 .icon_wishlist:hover .icon_wishlist_dessus {
   transform: scale(1.05);
   transform-origin: bottom;
-  transition: transform 800ms ease;
+  transition: transform 300ms;
 }
 
 /*.icon_wishlist_fond
@@ -257,6 +256,13 @@ header h1 {
   align-items: center;
   background-color: #EAEAEA;
 }
+@media screen and (min-width: 1040px) {
+  .barre_recherche {
+    width: 30%;
+    margin: auto;
+    border: 1px solid #FF79DA;
+  }
+}
 
 .iconelocalisation {
   margin-right: 3px;
@@ -295,6 +301,12 @@ h3, h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 1040px) {
+  .comment_reserver {
+    flex-direction: row;
+    height: 100px;
+  }
 }
 
 .etapes {
@@ -354,6 +366,11 @@ h3, h2 {
   margin-bottom: 15px;
   background-color: white;
 }
+@media screen and (min-width: 1040px) {
+  .card {
+    width: 23%;
+  }
+}
 
 figure {
   width: 100%;
@@ -396,6 +413,14 @@ a:link {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1040px) {
+  .restaurant_card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 /*.icon_wishlist
  {
      @include anim_wishlisht;
@@ -415,6 +440,12 @@ footer ul {
   line-height: 26px;
   font-size: 16px;
   padding-left: 0px;
+}
+@media screen and (min-width: 1040px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 footer ul a:link {
   color: white;
@@ -478,6 +509,11 @@ body.page_menu .bloc_page header .fleche_precedent {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (min-width: 1040px) {
+  .menu_du_restaurant .entree_plat_dessert {
+    height: 440px;
+  }
+}
 .menu_du_restaurant h2 {
   font-family: "shrikhandregular";
   font-weight: normal;
@@ -488,6 +524,12 @@ body.page_menu .bloc_page header .fleche_precedent {
   flex-direction: column;
   justify-content: space-between;
   height: 450px;
+}
+@media screen and (min-width: 1040px) {
+  .categorie_de_plat {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .categorie_de_plat .les_choix {
   /* @include anim_wishlisht;*/

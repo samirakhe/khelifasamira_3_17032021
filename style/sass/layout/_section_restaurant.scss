@@ -13,6 +13,11 @@
     margin:auto;
     margin-bottom:15px;
     background-color: white;
+
+    @include deskonly
+    {
+        width: 23%;
+    }
  }
  figure
  {
@@ -55,6 +60,16 @@
  a:link
  {
      text-decoration: none;
+ }
+
+ .restaurant_card
+ {
+    @include deskonly
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
  }
  /*.icon_wishlist
  {
