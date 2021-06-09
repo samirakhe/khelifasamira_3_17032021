@@ -35,35 +35,34 @@
  .icon_wishlist_fond
  {
             transform: scale(1);
-          
-            font-size: 33px;
+            font-size: 30px;
             position: absolute;
             top:0;
  }
  .icon_wishlist_dessus
 {
             transform: scale(0);
-           
+            transition:transform 200ms ease-in-out;
             font-size: 33px;
             position: absolute;
             display: block;
-            top:0;  
+            top:1;  
             background-image:$degrade;
             -webkit-background-clip: text;
             color:transparent;
             visibility: visible;
 }
-   /* .icon_wishlist:hover .icon_wishlist_fond
+   .icon_wishlist:hover .icon_wishlist_fond
         {
             transform: scale(0);
-            
-            
-        }*/
+            transition: transform 500ms ease-in-out;
+        }
 
         .icon_wishlist:hover .icon_wishlist_dessus
         {
-            transform : scale(0.9);
-            transition : transform 400ms;
+            transform : scale(1.05);
+            transform-origin: bottom;
+            transition : transform 800ms ease;
         }
     
 

@@ -1,0 +1,16 @@
+@media screen and (min-width:1024px)
+{
+    .barre_recherche
+    {
+        width: 30%;
+        margin:auto;
+    }
+
+    .comment_reserver {
+        align-items: center;
+        height: 287px;
+        display: flex;
+       
+        justify-content: space-between;
+    }
+}
