@@ -9,24 +9,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation:load 5s ease forwards;
+    animation:load 3s linear forwards;
     
 
 }
-
-
-
 
 .bouncer 
 {
     display: flex;
     align-items: center;
     font-family: $primary_font;
+    font-weight: normal;
     justify-content: center;
     animation:boun;
     padding-top: 100px;
     text-align: center;
     font-size: 50px;
+    
+    
+}
+.lettre_bouncer
+{
+    text-shadow: 8px -3px 2px $primary, 11px -3px 20em $secondary, 2px 6px 0.1em $tertiary;
 }
 .bouncer :nth-child(1)
 {

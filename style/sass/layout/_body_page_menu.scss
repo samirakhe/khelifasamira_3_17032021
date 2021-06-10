@@ -41,13 +41,21 @@
             justify-content: space-between;
             
             @include deskonly
-        {
-            height: 440px;
-            
-        }
+            {
+                height: 390px;
+                flex-direction: row;
+            }
+       
 
         }
-    
+    .titre_et_menu
+    {
+        @include deskonly
+        {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     h2
         {
             font-family: $primary_font;
@@ -58,11 +66,7 @@
 {
    @include categorie_entreeplatdessert;
 
-   @include deskonly
-        {
-            display: flex;
-            flex-direction: row;
-        }
+  
 
    .les_choix
         {

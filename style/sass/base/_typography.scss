@@ -7,7 +7,7 @@
   @font-face {
     font-family: 'robotoregular';
     src: url('../font/regular/roboto-regular.woff2') url("roboto-regular.woff2") format('woff2'),
-         url('../font/regular/roboto-regular.woff') url("roboto-regular.woff") format('woff');
+         url('../font/regular/roboto-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,7 +15,7 @@
   @font-face {
     font-family: 'robotobold';
     src: url('../font/robotobold/roboto-bold-webfont.woff2') url ("roboto-bold-webfont.woff2") format('woff2'),
-         url('../font/robotobold/roboto-bold-webfont.woff') url ("roboto-bold-webfont.woff") format('woff');
+         url('../font/robotobold/roboto-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -23,7 +23,7 @@
 @font-face {
     font-family: 'robotothin';
     src: url("../font/robothin/roboto-thin-webfont.woff2") url ("roboto-thin-webfont.woff2") format('woff2'),
-         url("../font/robothin/roboto-thin-webfont.woff") url ("roboto-thin-webfont.woff") format('woff');
+         url("../font/robothin/roboto-thin-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 

@@ -260,7 +260,7 @@ header h1 {
   .barre_recherche {
     width: 30%;
     margin: auto;
-    border: 1px solid #FF79DA;
+    box-shadow: inset 2px 1px 13px 0px grey;
   }
 }
 
@@ -273,7 +273,7 @@ header h1 {
   text-align: center;
   font-size: 18px;
   width: 43%;
-  background-color: #EAEAEA;
+  background-color: transparent;
   height: 50px;
 }
 
@@ -368,7 +368,7 @@ h3, h2 {
 }
 @media screen and (min-width: 1040px) {
   .card {
-    width: 23%;
+    width: 100%;
   }
 }
 
@@ -397,6 +397,11 @@ figcaption {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+@media screen and (min-width: 1040px) {
+  .image_restaurant {
+    width: 18em;
+  }
+}
 
 .info_restaurant {
   display: flex;
@@ -409,6 +414,11 @@ figcaption {
   line-height: 2px;
 }
 
+.nom_et_localisation:hover {
+  color: #99E2D0;
+  transition: color 150ms;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -418,6 +428,11 @@ a:link {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+}
+@media screen and (min-width: 1040px) and (min-width: 1040px) {
+  .restaurant_card {
+    justify-content: space-around;
   }
 }
 
@@ -449,6 +464,9 @@ footer ul {
 }
 footer ul a:link {
   color: white;
+}
+footer ul li {
+  cursor: pointer;
 }
 footer .icone_footer {
   margin-right: 5px;
@@ -511,7 +529,14 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 @media screen and (min-width: 1040px) {
   .menu_du_restaurant .entree_plat_dessert {
-    height: 440px;
+    height: 390px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .menu_du_restaurant .titre_et_menu {
+    display: flex;
+    flex-direction: column;
   }
 }
 .menu_du_restaurant h2 {
@@ -527,8 +552,7 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 @media screen and (min-width: 1040px) {
   .categorie_de_plat {
-    display: flex;
-    flex-direction: row;
+    height: 330px;
   }
 }
 .categorie_de_plat .les_choix {
@@ -643,19 +667,19 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 @font-face {
   font-family: "robotoregular";
-  src: url("../font/regular/roboto-regular.woff2") url("roboto-regular.woff2") format("woff2"), url("../font/regular/roboto-regular.woff") url("roboto-regular.woff") format("woff");
+  src: url("../font/regular/roboto-regular.woff2") url("roboto-regular.woff2") format("woff2"), url("../font/regular/roboto-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotobold";
-  src: url("../font/robotobold/roboto-bold-webfont.woff2") url "roboto-bold-webfont.woff2" format("woff2"), url("../font/robotobold/roboto-bold-webfont.woff") url "roboto-bold-webfont.woff" format("woff");
+  src: url("../font/robotobold/roboto-bold-webfont.woff2") url "roboto-bold-webfont.woff2" format("woff2"), url("../font/robotobold/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotothin";
-  src: url("../font/robothin/roboto-thin-webfont.woff2") url "roboto-thin-webfont.woff2" format("woff2"), url("../font/robothin/roboto-thin-webfont.woff") url "roboto-thin-webfont.woff" format("woff");
+  src: url("../font/robothin/roboto-thin-webfont.woff2") url "roboto-thin-webfont.woff2" format("woff2"), url("../font/robothin/roboto-thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -669,18 +693,23 @@ body.page_menu .bloc_page header .fleche_precedent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: load 5s ease forwards;
+  animation: load 3s linear forwards;
 }
 
 .bouncer {
   display: flex;
   align-items: center;
   font-family: "shrikhandregular";
+  font-weight: normal;
   justify-content: center;
   animation: boun;
   padding-top: 100px;
   text-align: center;
   font-size: 50px;
+}
+
+.lettre_bouncer {
+  text-shadow: 8px -3px 2px #9356DC, 11px -3px 20em #FF79DA, 2px 6px 0.1em #99E2D0;
 }
 
 .bouncer :nth-child(1) {

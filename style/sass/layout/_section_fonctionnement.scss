@@ -11,7 +11,7 @@
         {
             width: 30%;
             margin: auto;
-            border:1px solid $secondary;
+            box-shadow: inset 2px 1px 13px 0px grey;
             
         }
        
@@ -28,7 +28,7 @@
         text-align: center;
         font-size: 18px;
         width: 43%;
-        background-color: #EAEAEA;
+        background-color:transparent;
         height: 50px;
     }
 

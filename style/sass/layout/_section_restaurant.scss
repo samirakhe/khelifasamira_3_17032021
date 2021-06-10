@@ -16,7 +16,7 @@
 
     @include deskonly
     {
-        width: 23%;
+        width: 100%;
     }
  }
  figure
@@ -45,6 +45,11 @@
      height: 175px;
      border-top-left-radius: 15px;
      border-top-right-radius: 15px;
+
+     @include deskonly
+     {
+         width: 18em;
+     }
  }
  .info_restaurant
  {
@@ -56,6 +61,12 @@
      width: 90%;
     margin: auto;
     line-height: 2px;
+ }
+
+ .nom_et_localisation:hover
+ {
+     color:$tertiary;
+     transition: color 150ms;
  }
  a:link
  {
@@ -69,6 +80,11 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @include deskonly
+        {
+            justify-content: space-around;
+        }
     }
  }
  /*.icon_wishlist
