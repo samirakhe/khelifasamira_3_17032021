@@ -256,7 +256,7 @@ header h1 {
   align-items: center;
   background-color: #EAEAEA;
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 768px) and (max-width: 1216px) {
   .barre_recherche {
     width: 30%;
     margin: auto;
@@ -302,7 +302,7 @@ h3, h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .comment_reserver {
     flex-direction: row;
     height: 100px;
@@ -365,10 +365,15 @@ h3, h2 {
   margin: auto;
   margin-bottom: 15px;
   background-color: white;
+  transform: scale(1);
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .card {
     width: 100%;
+  }
+  .card:hover {
+    transform: scale(1.03);
+    transition: transform 300ms;
   }
 }
 
@@ -397,9 +402,9 @@ figcaption {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .image_restaurant {
-    width: 18em;
+    width: 15em;
   }
 }
 
@@ -423,14 +428,14 @@ a:link {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .restaurant_card {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 }
-@media screen and (min-width: 1040px) and (min-width: 1040px) {
+@media screen and (min-width: 1216px) and (min-width: 1216px) {
   .restaurant_card {
     justify-content: space-around;
   }
@@ -456,7 +461,7 @@ footer ul {
   font-size: 16px;
   padding-left: 0px;
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 768px) and (max-width: 1216px) {
   footer ul {
     display: flex;
     justify-content: space-between;
@@ -527,13 +532,13 @@ body.page_menu .bloc_page header .fleche_precedent {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .menu_du_restaurant .entree_plat_dessert {
     height: 390px;
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .menu_du_restaurant .titre_et_menu {
     display: flex;
     flex-direction: column;
@@ -550,7 +555,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   justify-content: space-between;
   height: 450px;
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1216px) {
   .categorie_de_plat {
     height: 330px;
   }

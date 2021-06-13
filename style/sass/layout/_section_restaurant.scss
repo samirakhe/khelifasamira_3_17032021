@@ -13,11 +13,19 @@
     margin:auto;
     margin-bottom:15px;
     background-color: white;
+    transform:scale(1);
 
     @include deskonly
     {
         width: 100%;
+        &:hover {
+            transform:scale(1.03);
+            transition:transform 300ms;
+            
+           
+        }
     }
+   
  }
  figure
  {
@@ -48,8 +56,10 @@
 
      @include deskonly
      {
-         width: 18em;
+         width: 15em;
      }
+
+     
  }
  .info_restaurant
  {

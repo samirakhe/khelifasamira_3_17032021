@@ -7,7 +7,7 @@
         align-items: center;
         background-color: #EAEAEA;
 
-        @include deskonly
+        @include deskonly; @include tablet
         {
             width: 30%;
             margin: auto;
