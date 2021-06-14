@@ -44,16 +44,12 @@
             {
                 height: 390px;
                 flex-direction: row;
-            }
-       
-            .titre_et_menu
-            {
-                @include deskonly
+                .titre_et_menu
                 {
                     display: flex;
                     flex-direction: column;
                 }
-            }
+            }            
         }
     
     h2
