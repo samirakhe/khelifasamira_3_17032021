@@ -1,31 +1,4 @@
-/*.icon_wishlist
- {
-    /*@include anim_wishlisht;
-    width: 80px;
-    display: flex;
-
-    &:hover
-    {
-        .icon_wishlist_fond
-        {
-            transform: scale(0);
-            transition : transform 1s;
-            
-        }
-        +.icon_wishlist_dessus
-        {
-            transform : scale(1);
-            transition: transform 1s;
-        }
-    }
-    .icon_wishlist_dessus
-    {
-            visibility: hidden;
-            position: relative;
-    }
- }*/
-
- .icon_wishlist
+.icon_wishlist
  {
     width: 33px;
     height: 33px;
@@ -35,7 +8,6 @@
  .icon_wishlist_fond
  {
             transform: scale(1);
-            
             font-size: 30px;
             position: absolute;
             top:0;
@@ -43,7 +15,6 @@
  .icon_wishlist_dessus
 {
             transform: scale(0);
-           
             transition: transform 200ms ease-in-out;
             font-size: 33px;
             position: absolute;
@@ -61,31 +32,4 @@
         {
             transform : scale(1);
             transition : transform 500ms ;
-
         }
-    
-
-
-/*.icon_wishlist_fond
-        {
-            position:relative;
-            left: 31px;
-            color:black;
-            font-size: 33px;
-        }
-        .icon_wishlist_dessus
-            {
-                position: relative;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                font-size: 33px;
-                opacity: 0;
-                    &:hover {
-                    opacity: 1;
-                    transition: opacity 650ms ease-in-out;
-                    }
-            }
-       
-*/

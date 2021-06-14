@@ -1,41 +1,4 @@
 @charset "UTF-8";
-/*@mixin anim_wishlisht {
-
-        .icon_wishlist_fond
-        { 
-        position:relative;
-        left:37px;
-        color:black;
-        font-size: 33px;
-
-
-                &:hover
-                                {
-                                animation: moovebis 2s linear forwards;
-
-                                }
-
-                &:hover+.icon_wishlist_dessus
-                                {
-                                position: relative;
-                                animation: moove 300ms ease-in-out forwards;
-                                background-image:$degrade;
-                                -webkit-background-clip: text;
-                                color:transparent;
-                                font-size: 33px;
-                                visibility: visible;
-                                left: 5px;
-
-                                }
-
-                }
-}
-        .icon_wishlist_dessus
-        {
-                visibility: hidden;
-                position: relative;
-        }
-        */
 /* keyframe appliqué au choix du menu fichier body menu*/
 @keyframes choixone {
   from {
@@ -141,32 +104,6 @@
   cursor: pointer;
 }
 
-/*.icon_wishlist
- {
-    /*@include anim_wishlisht;
-    width: 80px;
-    display: flex;
-
-    &:hover
-    {
-        .icon_wishlist_fond
-        {
-            transform: scale(0);
-            transition : transform 1s;
-
-        }
-        +.icon_wishlist_dessus
-        {
-            transform : scale(1);
-            transition: transform 1s;
-        }
-    }
-    .icon_wishlist_dessus
-    {
-            visibility: hidden;
-            position: relative;
-    }
- }*/
 .icon_wishlist {
   width: 33px;
   height: 33px;
@@ -200,29 +137,6 @@
   transition: transform 500ms;
 }
 
-/*.icon_wishlist_fond
-        {
-            position:relative;
-            left: 31px;
-            color:black;
-            font-size: 33px;
-        }
-        .icon_wishlist_dessus
-            {
-                position: relative;
-                background-image:$degrade;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color:transparent;
-                font-size: 33px;
-                opacity: 0;
-                    &:hover {
-                    opacity: 1;
-                    transition: opacity 650ms ease-in-out;
-                    }
-            }
-
-*/
 body {
   font-family: "robotothin";
   font-weight: bold;
@@ -252,14 +166,7 @@ header h1 {
   align-items: center;
   background-color: #EAEAEA;
 }
-@media screen and (min-width: 1216px) {
-  .barre_recherche {
-    width: 30%;
-    margin: auto;
-    box-shadow: inset 2px 1px 13px 0px grey;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1216px) {
+@media screen and (min-width: 768px) and (max-width: 1218px) {
   .barre_recherche {
     width: 30%;
     margin: auto;
@@ -297,22 +204,26 @@ h3, h2 {
 .fontionnement {
   padding: 25px 9px 50px 9px;
 }
-
-.comment_reserver {
+.fontionnement .comment_reserver {
   align-items: center;
   height: 287px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 1216px) {
-  .comment_reserver {
+@media screen and (min-width: 1218px) {
+  .fontionnement .comment_reserver {
     flex-direction: row;
     height: 100px;
   }
 }
-
-.etapes {
+@media screen and (min-width: 768px) and (max-width: 1218px) {
+  .fontionnement .comment_reserver {
+    flex-direction: row;
+    height: 100px;
+  }
+}
+.fontionnement .etapes {
   cursor: pointer;
   border: none;
   padding: 15px;
@@ -326,12 +237,17 @@ h3, h2 {
   height: 75px;
   transition: all 0.5s ease;
 }
-.etapes:hover {
+.fontionnement .etapes:hover {
   color: #9356DC;
   box-shadow: 2px 15px 10px #0000002e;
 }
-
-.nombre {
+@media screen and (min-width: 768px) and (max-width: 1218px) {
+  .fontionnement .etapes {
+    display: inline-block;
+    width: 30%;
+  }
+}
+.fontionnement .etapes .nombre {
   color: white;
   background-color: #9356DC;
   border-radius: 13px;
@@ -343,14 +259,12 @@ h3, h2 {
   position: relative;
   right: 26px;
 }
-
-.icone_et_explication {
+.fontionnement .etapes .icone_et_explication {
   display: flex;
   justify-content: flex-start;
   font-weight: bold;
 }
-
-.icone {
+.fontionnement .etapes .icone {
   margin: 0px 20px;
   font-size: 1.1em;
 }
@@ -359,8 +273,36 @@ h3, h2 {
   background-color: #F6F6F6;
   padding: 15px 9px 50px 9px;
 }
-
-.card {
+.restaurants .restaurant_card {
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1218px) {
+  .restaurants .restaurant_card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1218px) {
+  .restaurants .restaurant_card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1218px) {
+  .restaurants .restaurant_card .card_restaurant {
+    display: inline-block;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1218px) {
+  .restaurants .restaurant_card .card_restaurant {
+    display: inline-block;
+    width: 24%;
+  }
+}
+.restaurants .restaurant_card .card_restaurant .card {
   border-radius: 15px;
   box-shadow: -1px 2px 10px #0000002e;
   height: 260px;
@@ -370,30 +312,21 @@ h3, h2 {
   background-color: white;
   transform: scale(1);
 }
-@media screen and (min-width: 1216px) {
-  .card {
+@media screen and (min-width: 1218px) {
+  .restaurants .restaurant_card .card_restaurant .card {
     width: 100%;
   }
-  .card:hover {
+  .restaurants .restaurant_card .card_restaurant .card:hover {
     transform: scale(1.03);
     transition: transform 300ms;
   }
 }
-
-@media screen and (min-width: 1216px) {
-  .card_restaurant {
-    display: inline-block;
-    width: 24%;
-  }
-}
-
-figure {
+.restaurants .restaurant_card .card_restaurant .card figure {
   width: 100%;
   margin: auto;
   position: relative;
 }
-
-figcaption {
+.restaurants .restaurant_card .card_restaurant .card figcaption {
   position: absolute;
   top: 5px;
   right: 8px;
@@ -404,21 +337,19 @@ figcaption {
   font-family: "robotobold";
   border-radius: 4px;
 }
-
-.image_restaurant {
+.restaurants .restaurant_card .card_restaurant .card .image_restaurant {
   object-fit: cover;
   width: 100%;
   height: 175px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-@media screen and (min-width: 1216px) {
-  .image_restaurant {
+@media screen and (min-width: 1218px) {
+  .restaurants .restaurant_card .card_restaurant .card .image_restaurant {
     width: 100%;
   }
 }
-
-.info_restaurant {
+.restaurants .restaurant_card .card_restaurant .card .info_restaurant {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -428,34 +359,14 @@ figcaption {
   margin: auto;
   line-height: 2px;
 }
-
-.nom_et_localisation:hover {
+.restaurants .restaurant_card .card_restaurant .card .info_restaurant .nom_et_localisation:hover {
   color: #99E2D0;
   transition: color 150ms;
 }
-
-a:link {
+.restaurants .restaurant_card a:link {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1216px) {
-  .restaurant_card {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1216px) and (min-width: 1216px) {
-  .restaurant_card {
-    justify-content: space-around;
-  }
-}
-
-/*.icon_wishlist
- {
-     @include anim_wishlisht;
-
-}*/
 footer {
   background-color: #353535;
   color: white;
@@ -471,7 +382,13 @@ footer ul {
   font-size: 16px;
   padding-left: 0px;
 }
-@media screen and (min-width: 1216px) {
+@media screen and (min-width: 1218px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1218px) {
   footer ul {
     display: flex;
     justify-content: space-between;
@@ -515,12 +432,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   object-fit: cover;
 }
 
-.nom_et_coeur {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .h3_menu {
   font-family: "robotothin";
   padding-bottom: 5px;
@@ -536,20 +447,25 @@ body.page_menu .bloc_page header .fleche_precedent {
   position: relative;
   margin-top: -31px;
 }
+.menu_du_restaurant .nom_et_coeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .menu_du_restaurant .entree_plat_dessert {
   height: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 1216px) {
+@media screen and (min-width: 1218px) {
   .menu_du_restaurant .entree_plat_dessert {
     height: 390px;
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1216px) {
-  .menu_du_restaurant .titre_et_menu {
+@media screen and (min-width: 1218px) {
+  .menu_du_restaurant .entree_plat_dessert .titre_et_menu {
     display: flex;
     flex-direction: column;
   }
@@ -566,7 +482,6 @@ body.page_menu .bloc_page header .fleche_precedent {
   height: 330px;
 }
 .categorie_de_plat .les_choix {
-  /* @include anim_wishlisht;*/
   border: none;
   padding: 15px;
   width: 21em;
@@ -601,18 +516,17 @@ body.page_menu .bloc_page header .fleche_precedent {
   animation: rotateok 500ms ease-in-out 1 forwards;
   cursor: pointer;
 }
-.categorie_de_plat h4, .categorie_de_plat .prix {
+.categorie_de_plat .les_choix h4, .categorie_de_plat .les_choix .prix {
   font-family: "robotobold";
 }
-.categorie_de_plat h4 {
+.categorie_de_plat .les_choix h4 {
   margin-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   margin-top: 0px;
 }
-
-.detail_et_prix {
+.categorie_de_plat .les_choix .detail_et_prix {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -622,21 +536,20 @@ body.page_menu .bloc_page header .fleche_precedent {
   overflow: hidden;
   height: 30px;
 }
-.detail_et_prix .prix {
+.categorie_de_plat .les_choix .detail_et_prix .prix {
   position: relative;
 }
-.detail_et_prix .icon_ok {
+.categorie_de_plat .les_choix .detail_et_prix .icon_ok {
   color: white;
   font-size: 33px;
 }
-.detail_et_prix p.plat {
+.categorie_de_plat .les_choix .detail_et_prix p.plat {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
 }
-
-.ok {
+.categorie_de_plat .les_choix .detail_et_prix .ok {
   position: absolute;
   background-color: #99E2D0;
   width: 25%;

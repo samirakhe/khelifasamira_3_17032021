@@ -15,64 +15,21 @@
         flex-direction: column;
         justify-content: space-between;
         height:330px;
-        
-
 }
 
 @mixin deskonly {
-        @media screen and (min-width:1216px) {
+        @media screen and (min-width:1218px) {
                 @content;    
         }
 }
 @mixin tablet {
-        @media screen and (min-width :768px) and (max-width:1216px) {
+        @media screen and (min-width :768px) and (max-width:1218px) {
                 @content;
         }
 }
 
-/*@mixin anim_wishlisht {
-    
-        .icon_wishlist_fond
-        { 
-        position:relative;
-        left:37px;
-        color:black;
-        font-size: 33px;
-        
-        
-                &:hover
-                                {
-                                animation: moovebis 2s linear forwards;
-                        
-                                }
-                        
-                &:hover+.icon_wishlist_dessus
-                                {
-                                position: relative;
-                                animation: moove 300ms ease-in-out forwards;
-                                background-image:$degrade;
-                                -webkit-background-clip: text;
-                                color:transparent;
-                                font-size: 33px;
-                                visibility: visible;
-                                left: 5px;
-                                
-                                }
-                        
-                }
-}
-        .icon_wishlist_dessus
-        {
-                visibility: hidden;
-                position: relative;
-        }
-        */
-
-
 @mixin ellipsis {
         text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
- 
-    
+        white-space: nowrap;
+        overflow: hidden;
 }

@@ -22,6 +22,11 @@ footer
             display: flex;
             justify-content: space-between;
         }
+        @include tablet
+        {
+            display: flex;
+            justify-content: space-between;
+        }
         
          a:link 
         {
@@ -31,7 +36,6 @@ footer
         cursor:pointer;
         }
     }
-
 
     .icone_footer
     {
