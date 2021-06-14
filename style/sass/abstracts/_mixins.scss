@@ -14,11 +14,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height:450px;
-        @include deskonly
-        {
-        height: 330px;
-        }
+        height:330px;
+        
 
 }
 
@@ -32,6 +29,7 @@
                 @content;
         }
 }
+
 /*@mixin anim_wishlisht {
     
         .icon_wishlist_fond

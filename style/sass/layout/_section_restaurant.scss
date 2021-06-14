@@ -27,6 +27,15 @@
     }
    
  }
+
+ .card_restaurant{
+
+     @include deskonly
+            {
+                display: inline-block;
+                width: 24%;
+            }
+}
  figure
  {
      width: 100%;
@@ -56,7 +65,7 @@
 
      @include deskonly
      {
-         width: 15em;
+         width: 100%;
      }
 
      
