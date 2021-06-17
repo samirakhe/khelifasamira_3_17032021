@@ -482,7 +482,7 @@ body.page_menu .bloc_page header .fleche_precedent {
   margin-bottom: 10px;
   background-color: white;
   position: relative;
-  animation: choixone 1200ms backwards;
+  animation: choixone 1000ms backwards;
   /* Voir fichier keyframes*/
   display: flex;
   justify-content: space-between;
@@ -494,7 +494,7 @@ body.page_menu .bloc_page header .fleche_precedent {
 }
 .categorie_de_plat .les_choix:hover .prix {
   margin-right: 70px;
-  transition: margin-right 600ms;
+  transition: margin-right 500ms;
 }
 .categorie_de_plat .les_choix:hover .prix + .ok {
   transform: scaleX(1);

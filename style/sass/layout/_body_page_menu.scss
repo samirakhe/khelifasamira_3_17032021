@@ -68,7 +68,7 @@
         background-color: white;
         position:relative;
         
-        animation:choixone 1200ms backwards;/* Voir fichier keyframes*/
+        animation:choixone 1000ms backwards;/* Voir fichier keyframes*/
         
        
         
@@ -89,7 +89,7 @@
                 .prix
                 {
                     margin-right:70px;
-                    transition:margin-right 600ms;
+                    transition:margin-right 500ms;
                 }
                 .prix +.ok
                 {
