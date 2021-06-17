@@ -67,7 +67,9 @@
         @include encart;
         background-color: white;
         position:relative;
-        animation:choixone 1300ms  cubic-bezier(0, 0.5, 0.5, 1) backwards;/* Voir fichier keyframes*/
+        
+        animation:choixone 1200ms backwards;/* Voir fichier keyframes*/
+        
        
         
         display: flex;
@@ -159,7 +161,7 @@
 
 .categorie_de_plat :nth-child(1)
 {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 .categorie_de_plat :nth-child(2)
 {
