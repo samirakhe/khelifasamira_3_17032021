@@ -166,14 +166,7 @@ header h1 {
   align-items: center;
   background-color: #EAEAEA;
 }
-@media screen and (min-width: 1218px) {
-  .barre_recherche {
-    width: 30%;
-    margin: auto;
-    box-shadow: inset 2px 1px 13px 0px grey;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1218px) {
+@media screen and (min-width: 768px) {
   .barre_recherche {
     width: 30%;
     margin: auto;
@@ -218,13 +211,7 @@ h3, h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 1218px) {
-  .fontionnement .comment_reserver {
-    flex-direction: row;
-    height: 100px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1218px) {
+@media screen and (min-width: 768px) {
   .fontionnement .comment_reserver {
     flex-direction: row;
     height: 100px;
@@ -283,14 +270,7 @@ h3, h2 {
 .restaurants .restaurant_card {
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1218px) {
-  .restaurants .restaurant_card {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1218px) {
+@media screen and (min-width: 768px) {
   .restaurants .restaurant_card {
     display: flex;
     justify-content: space-between;
@@ -390,13 +370,7 @@ footer ul {
   font-size: 16px;
   padding-left: 0px;
 }
-@media screen and (min-width: 1218px) {
-  footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1218px) {
+@media screen and (min-width: 768px) {
   footer ul {
     display: flex;
     justify-content: space-between;
@@ -499,10 +473,8 @@ body.page_menu .bloc_page header .fleche_precedent {
   margin-bottom: 10px;
   background-color: white;
   position: relative;
-  animation-name: choixone;
+  animation: choixone 1300ms cubic-bezier(0, 0.5, 0.5, 1) backwards;
   /* Voir fichier keyframes*/
-  animation-duration: 1s;
-  animation-fill-mode: backwards;
   display: flex;
   justify-content: space-between;
   flex-direction: column;

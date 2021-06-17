@@ -27,7 +27,11 @@
                 @content;
         }
 }
-
+@mixin tablet_desk {
+        @media screen and (min-width :768px) {
+                @content;
+        }
+}
 @mixin ellipsis {
         text-overflow: ellipsis;
         white-space: nowrap;
