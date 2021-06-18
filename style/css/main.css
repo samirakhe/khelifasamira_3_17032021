@@ -124,10 +124,11 @@
   font-size: 30px;
   position: absolute;
   top: 0;
+  opacity: 1;
 }
 
 .icon_wishlist_dessus {
-  transform: scale(0);
+  /*transform: scale(0);*/
   transition: transform 200ms ease-in-out;
   font-size: 33px;
   position: absolute;
@@ -139,11 +140,38 @@
   visibility: visible;
   right: 1px;
   bottom: 2px;
+  opacity: 0;
 }
 
+@keyframes coeur {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .icon_wishlist:hover .icon_wishlist_dessus {
-  transform: scale(1);
-  transition: transform 500ms;
+  animation: coeur 500ms forwards;
+  /*
+  transform : scale(1);
+  transition : transform 800ms ;
+  transform-origin: bottom;*/
+}
+.icon_wishlist:hover .icon_wishlist_fond {
+  opacity: 0;
 }
 
 body {
@@ -180,6 +208,7 @@ header h1 {
     width: 30%;
     margin: auto;
     box-shadow: inset 2px 1px 13px 0px grey;
+    border-radius: 25px;
   }
 }
 
