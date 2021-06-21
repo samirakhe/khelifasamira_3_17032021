@@ -67,11 +67,7 @@
         @include encart;
         background-color: white;
         position:relative;
-        
         animation:choixone 1000ms backwards;/* Voir fichier keyframes*/
-        
-       
-        
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -82,8 +78,8 @@
             {
                 width: 73%;
                 
-            }
-            }
+        }
+}
             &:hover
             {
                 .prix
@@ -113,7 +109,8 @@
                 margin-top:0px;
                 }
     
-            .detail_et_prix {
+            .detail_et_prix 
+            {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;

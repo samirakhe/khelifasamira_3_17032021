@@ -16,7 +16,13 @@
         justify-content: space-between;
         height:360px;
 }
+@mixin ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
 
+/*RESPONSIVE*/
 @mixin deskonly {
         @media screen and (min-width:1218px) {
                 @content;    
@@ -32,8 +38,8 @@
                 @content;
         }
 }
-@mixin ellipsis {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+@mixin bouton-hover {
+        transform: scale(1.05);
+        background: linear-gradient(-5deg , #9356dc7a, #ff79dac9);
+        box-shadow: -1px 2px 18px #0000008c;
 }
