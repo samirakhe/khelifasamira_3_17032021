@@ -68,6 +68,27 @@
     transform: scale(0);
   }
 }
+/*keyframe appliqué a l'icone wishlist */
+@keyframes coeur {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* keyframes appliquée à l'icone de validation du menu*/
 @keyframes rotateok {
   0% {
@@ -130,7 +151,7 @@
 .icon_wishlist_dessus {
   /*transform: scale(0);*/
   transition: transform 200ms ease-in-out;
-  font-size: 33px;
+  font-size: 30px;
   position: absolute;
   display: block;
   top: 1;
@@ -143,26 +164,6 @@
   opacity: 0;
 }
 
-@keyframes coeur {
-  0% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .icon_wishlist:hover .icon_wishlist_dessus {
   animation: coeur 500ms forwards;
   /*

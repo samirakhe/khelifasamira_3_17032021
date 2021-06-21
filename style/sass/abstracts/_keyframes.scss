@@ -48,6 +48,18 @@
         0% {transform: scale(1)}
         100% {transform: scale(0)}
 }
+
+
+/*keyframe appliqué a l'icone wishlist */
+@keyframes coeur 
+ {
+     0% {opacity: 0.1}
+     20% {opacity: 0.2}
+     40% {opacity: 0.4}
+     60% {opacity: 0.6}
+     80% {opacity: 0.8}
+     100% {opacity: 1}
+ }
 /* keyframes appliquée à l'icone de validation du menu*/
 @keyframes rotateok
 {

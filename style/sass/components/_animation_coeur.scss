@@ -1,8 +1,8 @@
 .icon_wishlist
  {
-    width: 33px;
-    height: 33px;
-    position:relative;
+            width: 33px;
+            height: 33px;
+            position:relative;
  }
 
  .icon_wishlist_fond
@@ -19,7 +19,7 @@
 {
             /*transform: scale(0);*/
             transition: transform 200ms ease-in-out;
-            font-size: 33px;
+            font-size: 30px;
             position: absolute;
             display: block;
             top:1;  
@@ -31,15 +31,7 @@
             bottom: 2px;
             opacity: 0;
 }
- @keyframes coeur
- {
-     0% {opacity: 0.1}
-     20% {opacity: 0.2}
-     40% {opacity: 0.4}
-     60% {opacity: 0.6}
-     80% {opacity: 0.8}
-     100% {opacity: 1}
- }
+
 .icon_wishlist:hover 
 {
    
@@ -55,6 +47,6 @@
 
         .icon_wishlist_fond
         {
-     opacity : 0;
+            opacity : 0;
         }
 }
